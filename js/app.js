@@ -2,5 +2,3 @@
 import data from "../../assets/data.js";
 
 console.log("200 OK\n" + JSON.stringify(data));
-
-document.getElementById("app").innerHTML = JSON.stringify(data);
