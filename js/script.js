@@ -4,8 +4,10 @@ const normalClass = "h-unselected"
 
 function reset() {
     headerContext.forEach((id) => {
-        document.getElementById(id).classList.remove(className);
-        document.getElementById(id).classList.add(normalClass)
+        let obj = document.getElementById(id);
+
+        obj.classList.remove(className);
+        obj.classList.add(normalClass);
     })
 }
 
