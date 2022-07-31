@@ -10,3 +10,24 @@
     border-radius: 5px;
     padding: 15px 20px;
 }
+
+.h-unselected {
+    color: #ffffff;
+
+    /* setting a transition */
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition:all 1s;
+    -o-transition: all 1s;
+}
+
+.h-selected {
+    color: #222222;
+    font-size: 1.3em;
+
+    /* setting a transition */
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition:all 1s;
+    -o-transition: all 1s;
+}
