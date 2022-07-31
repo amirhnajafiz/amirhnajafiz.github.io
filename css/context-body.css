@@ -1,0 +1,10 @@
+.context-body {
+    width: 60%;
+    margin: 200px auto;
+}
+
+.context-body-box {
+    background: rgba(153, 153, 153, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+}
