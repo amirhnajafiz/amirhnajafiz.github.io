@@ -1,6 +1,6 @@
-var data = {
+const data = {
     "fname": "Amirhossein",
     "lname": "Najafizadeh"
-}
+};
 
 export default data;
