@@ -1,7 +1,14 @@
+@import "background.css";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Noto Sans Carian", serif;
+  font-family: 'Exo', sans-serif;
+  color: #666666;
+}
+
+body {
+  min-height: 100vh;
 }
