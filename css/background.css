@@ -3,6 +3,7 @@
 .context {
     width: 100%;
     position: absolute;
+    min-height: 100vh;
 }
 
 .area{

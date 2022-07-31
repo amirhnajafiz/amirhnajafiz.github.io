@@ -23,8 +23,8 @@
                 in here.<br />
             </p>
         </main>
-        <footer>
-
+        <footer class="card-footer">
+            create and design by amirhossein najafizadeh . all rights reserved <span id="date"></span>
         </footer>
     </div>
     <div class="area" >
@@ -47,5 +47,8 @@
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script type="module" src="js/script.js"></script>
+    <script>
+        document.getElementById("date").innerText = "2022-" + new Date().getFullYear()
+    </script>
 </body>
 </html>
