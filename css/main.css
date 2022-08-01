@@ -13,6 +13,7 @@
 
 body {
   background: #666666 !important;
+  min-height: 100vh;
 }
 
 footer {
