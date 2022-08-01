@@ -4,11 +4,16 @@
 }
 
 .context-body-box {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     background: rgba(153, 153, 153, 0.4);
     border-radius: 5px;
-    padding: 15px 20px;
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .h-unselected {

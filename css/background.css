@@ -3,14 +3,13 @@
 .context {
     width: 100%;
     position: absolute;
-    min-height: 100vh;
 }
 
 .area{
     background: #464646;
     background: -webkit-linear-gradient(to left, #74ffaf, #02853b);
     width: 100%;
-    height:100vh;
+    min-height: 100vh;
 }
 
 .circles{
