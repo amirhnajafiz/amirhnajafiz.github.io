@@ -7,13 +7,18 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Exo', sans-serif;
+  font-family: "Comic Sans MS", serif;
   color: #ffffff;
 }
 
 body {
   background: #666666 !important;
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 footer {
