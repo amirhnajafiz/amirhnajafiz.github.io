@@ -22,16 +22,3 @@ footer {
     text-align: center;
     font-size: 0.7rem;
 }
-
-.my-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: red;
-}
-
-.holder {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-}
