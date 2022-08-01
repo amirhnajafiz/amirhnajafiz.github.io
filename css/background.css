@@ -2,18 +2,9 @@
 
 .context {
     width: 100%;
-    position: absolute;
-}
-
-.area{
-    background: #464646;
-    background: -webkit-linear-gradient(to left, #74ffaf, #02853b);
-    width: 100%;
-    min-height: 100vh;
 }
 
 .circles{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

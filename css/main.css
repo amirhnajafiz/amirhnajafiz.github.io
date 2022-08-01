@@ -11,8 +11,15 @@
   color: #ffffff;
 }
 
+body {
+  background: #666666;
+}
+
 footer {
+  position: absolute;
+  bottom: 0;
   width:100%;
+  height: 30px;
   text-align: center;
   font-size: 0.7rem;
 }
