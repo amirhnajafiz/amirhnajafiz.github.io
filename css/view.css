@@ -19,10 +19,4 @@
     overflow: hidden;
     width: 0;
     height: 0;
-
-    /* setting a transition */
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
 }

@@ -12,9 +12,25 @@
     width: 70px;
     height: 35px;
     margin-right: 5px;
+
+    /* setting a transition */
+    transition: top 1s;
+    -moz-transition: top 1s;
+    -webkit-transition: top 1s;
+    -o-transition: top 1s;
 }
 
 .nav button:hover {
     border: 1px solid #888888;
     color: #888888 !important;
+}
+
+.selected-btn {
+    top: -10px !important;
+
+    /* setting a transition */
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
 }
