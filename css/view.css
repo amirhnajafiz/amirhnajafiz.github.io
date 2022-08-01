@@ -2,18 +2,27 @@
     width: 100%;
 }
 
-.component {
-    width: 100%;
-}
-
 .appear {
+    width: 100%;
     padding: 20px 40px;
     overflow: visible;
     height: initial;
+
+    /* setting a transition */
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
 }
 
 .disappear {
     overflow: hidden;
     width: 0;
     height: 0;
+
+    /* setting a transition */
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
 }
