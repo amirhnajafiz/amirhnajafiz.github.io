@@ -7,23 +7,7 @@
     width: 100%;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
-    padding: 15px 0;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.my-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: red;
-}
-
-.holder {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
 }

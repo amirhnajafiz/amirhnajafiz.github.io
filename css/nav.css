@@ -1,0 +1,20 @@
+.nav {
+    width: 100%;
+}
+
+.nav button {
+    position: relative;
+    top: -14.5px;
+    outline: none;
+    background: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 60px;
+    width: 70px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.nav button:hover {
+    border: 1px solid #888888;
+    color: #888888 !important;
+}
