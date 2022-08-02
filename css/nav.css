@@ -9,9 +9,13 @@
     background: #ffffff;
     border: 1px solid #222222;
     border-radius: 60px;
-    width: 70px;
+    width: 35px;
     height: 35px;
     margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     /* setting a transition */
     transition: top 1s;
@@ -36,19 +40,17 @@
 }
 
 #bt-1 {
-    background: #2954a2;
-    color: #ffffff;
-    border-color: #2954a2;
+    background: #3670d5;
+    border-color: #3670d5;
 }
 
 #bt-2 {
-    background: #067530;
-    color: #ffffff;
-    border-color: #067530;
+    background: #099a43;
+    border-color: #099a43;
 }
 
 #bt-3 {
     background: #dcdc10;
-    color: #222222;
+    color: #222222 !important;
     border-color: #dcdc10;
 }
