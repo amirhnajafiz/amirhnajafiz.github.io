@@ -1,0 +1,39 @@
+#tech-component div ul {
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#tech-component div ul li {
+    padding: 5px;
+    border-radius: 2px;
+
+    /* setting a transition */
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition:all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+#tech-component div ul li ul {
+    margin-bottom: 0;
+}
+
+#tech-component div ul li:hover {
+    margin-bottom: 0;
+    padding: 15px 5px;
+}
+
+#tech-component div ul li:nth-child(odd) {
+    background: #cbcbcb;
+}
+
+#tech-component div ul li:nth-child(even) {
+    background: #444444;
+    color: #ffffff;
+}
+
+#tech-component div h5 {
+    border-bottom: 1px solid #a8a8a8;
+    padding-bottom: 5px;
+}
