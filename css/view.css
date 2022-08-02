@@ -4,9 +4,9 @@
 
 .appear {
     width: 100%;
-    padding: 20px 40px;
     overflow: visible;
     height: initial;
+    padding: 60px;
 
     /* setting a transition */
     transition: all 1s;
@@ -17,6 +17,5 @@
 
 .disappear {
     overflow: hidden;
-    width: 0;
     height: 0;
 }
