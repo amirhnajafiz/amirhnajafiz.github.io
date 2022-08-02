@@ -34,3 +34,21 @@
     -webkit-transition: all 1s;
     -o-transition: all 1s;
 }
+
+#bt-1 {
+    background: #2954a2;
+    color: #ffffff;
+    border-color: #2954a2;
+}
+
+#bt-2 {
+    background: #067530;
+    color: #ffffff;
+    border-color: #067530;
+}
+
+#bt-3 {
+    background: #dcdc10;
+    color: #222222;
+    border-color: #dcdc10;
+}
