@@ -1,0 +1,54 @@
+$blueBtn: #3670d5
+$greenBtn: #099a43
+$yellowBtn: #dcdc10
+
+
+.nav
+  width: 100%
+
+.nav button
+  position: relative
+  top: -14.5px
+  outline: none
+  background: #ffffff
+  border: 1px solid #222222
+  border-radius: 60px
+  width: 35px
+  height: 35px
+  margin-right: 5px
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  /* setting a transition */
+  transition: top 1s
+  -moz-transition: top 1s
+  -webkit-transition: top 1s
+  -o-transition: top 1s
+
+.nav button:hover
+  border: 1px solid #888888
+  color: #888888 !important
+
+.selected-btn
+  top: -10px !important
+
+  /* setting a transition */
+  transition: all 1s
+  -moz-transition: all 1s
+  -webkit-transition: all 1s
+  -o-transition: all 1s
+
+#bt-1
+  background: $blueBtn
+  border-color: $blueBtn
+
+#bt-2
+  background: $greenBtn
+  border-color: $greenBtn
+
+#bt-3
+  background: $yellowBtn
+  color: #222222
+  border-color: $yellowBtn
