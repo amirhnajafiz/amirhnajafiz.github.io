@@ -40,6 +40,7 @@ function show(selected, btn) {
     components.forEach((c) => {
         const obj = document.getElementById(c.id)
         if (c.id === selected) {
+            document.getElementsByTagName("body").item(0).style.background = c.color
             v.style.background = c.color
             cf.style.background = c.hex
             obj.classList.remove(disappear)
