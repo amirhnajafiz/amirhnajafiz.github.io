@@ -1,243 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amirhossein.Najafizadeh</title>
-    <!-- CSS Styles -->
-    <link href="sass/main.css" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-    />
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Amirhossein Najafizadeh</title>
 </head>
-<body style="background: rgba(2, 193, 248, 0.2);">
-    <div class="container-fluid" style="padding: 0; margin: 0;">
-        <!-- HTML code -->
-        <header class="header">
-            <span id="h-1" style="display: inline-block; margin: 0 10px;">
-                Be Rebel
-            </span>
-            <span id="h-2" style="display: inline-block; margin: 0 10px;">
-                Be Unique
-            </span>
-            <span id="h-3" style="display: inline-block; margin: 0 10px;">
-                Be Yourself
-            </span>
-        </header>
-        <div class="context-body">
-            <div class="context-body-box">
-                <nav class="nav">
-                    <button id="bt-1" onclick="show('home-component', 'bt-1')" class="selected-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                    </button>
-                    <button id="bt-2" onclick="show('bio-component', 'bt-2')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                        </svg>
-                    </button>
-                    <button id="bt-3" onclick="show('tech-component', 'bt-3')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
-                            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
-                        </svg>
-                    </button>
-                </nav>
-                <div class="holder">
-                    <div id="home-component" class="appear">
-                        <div class="m-bottom">
-                            <h3 style="display: inline-block;">
-                                Home
-                            </h3>
-                            <img class="img" src="https://avatars.githubusercontent.com/u/58415967?v=4" alt="logo" />
-                        </div>
-                        <p style="text-align: justify;">
-                            Hi, my name is Amirhossein Najafizadeh.
-                            I'm a 21 years old Computer Engineering university student, studying at
-                            <b>Amirkabir University of Tehran</b> in Iran.
-                        </p>
-                        <p style="text-align: justify;">
-                            Currently I'm working as a full time Back-end
-                            developer at <span style="color: #00d200;">Snapp!</span> Inc.
-                            I also cooperate in creating online courses in <b>Udemy</b>.
-                        </p>
-                        <p style="text-align: justify;">
-                            I'm a former member of Student
-                            Scientific Association of the Faculty of Computer Engineering
-                            in Amirkabir University of Technology. I was Secretary
-                            of the 13th <b>Linux Festival</b> at Amirkabir University of Technology.
-                            I am the founder of <b>Amirkabir Darulfanun</b>,
-                            the largest collection for holding student events in the Faculty
-                            of Computer Engineering at Amirkabir University of Technology.
-                        </p>
-                    </div>
-                    <div id="bio-component" class="disappear">
-                        <div class="m-bottom">
-                            <h3 style="display: inline-block;">
-                                Biography
-                            </h3>
-                            <img class="img" src="https://avatars.githubusercontent.com/u/58415967?v=4" alt="logo" />
-                        </div>
-                        <p style="text-align: justify;">
-                            I was born on August 25th 2001 in Mashhad city of Iran.
-                            Got my diploma for Mathematical and Physics at the age of 18 and then attended
-                            university for Computer Engineering.<br /><br />
-                            I began my journey by learning and coding with C programming language. After that
-                            I started to learn Java programming language.<br /><br />
-                            After one year at university, I started to work as a Front-end developer, using Vue.js.
-                            Then I worked on the WordPress systems and became a master in it. My first project was
-                            SSC (Student Scientific Society of Computer department) official website.<br /><br />
-                            After that I started to learn python, flask and django, to put myself in the back-end developing
-                            path.
-                            After 3 months, I joined the Maktab Sharif PHP/Laravel bootcamp to learn PHP.
-                            I worked as a trainee for 6 months, and then I learn core PHP developing and Laravel framework.
-                            After that I joined <b>Snapp!</b> company and started my position as Golang back-end trainee.
-                            I have been working as a back-end developer for almost 7 months.
-                        </p>
-                    </div>
-                    <div id="tech-component" class="disappear">
-                        <h3 class="m-bottom">
-                            Technical Skills
-                        </h3>
-                        <div>
-                            <h5>
-                                Fields
-                            </h5>
-                            <ul>
-                                <li>
-                                    <b>Software Engineering and Software Maintenance</b><br />
-                                    Including software testing and monitoring.<br />
-                                    Waterfall and Agile developing.<br />
-                                    Software architectures (Micro-service, Monolithic, Client-server, MVC, MVP).<br />
-                                    Creating services (FaaS, SaaS, Rest-API, SDK, gRPC, Web-sockets, Socket.IO).<br />
-                                    Design Patterns (Abstract, Chaining, Prototype, Singular, Factory, Object Pool).<br />
-                                </li>
-                                <li>
-                                    <b>DevOps and SRE</b><br />
-                                    Have knowledge in Docker and Kubernetes.<br />
-                                    Familiar with CI/CD and GitHub actions (Workflows).<br />
-                                    Worked with VMs and Cloud cluster (Nginx, OpenShift, Helm Charts, ArgoCD, Harbor, Istio).<br />
-                                    Have experience in working with monitoring tools (Grafana, Prometheus, Victoria Metrics, Kibana).
-                                </li>
-                                <li>
-                                    <b>Computer Networking</b><br />
-                                    Worked with: HTTP, HTTPS, FTP, QUIC, SMTP, DNS, DHCP, DASH.<br />
-                                    Familiar with Proxy Server, Reverse Proxy, Load Balancing, Cluster IP and DNS.<br />
-                                    Familiar with OSI model and TCP/IP model.<br />
-                                </li>
-                                <li>
-                                    <b>Database Managing</b><br />
-                                    Expert in using SQL and NoSQL databases. <br />
-                                    Including: MySQL, SQLite, PostgresQL, MongoDB, Redis<br />
-                                </li>
-                                <li>
-                                    <b>Frontend Developing</b><br />
-                                    Basic tools like: HTML, HTML5.<br />
-                                    Style: CSS, CSS3, Bootstrap, SASS, SCSS.<br />
-                                    Expert in Javascript (Vue.js, React.js).
-                                </li>
-                            </ul>
-                            <h5>
-                                Programming languages
-                            </h5>
-                            <ul>
-                                <li>
-                                    Golang: Go, Fiber, Gin, Mux, Echo
-                                </li>
-                                <li>
-                                    Python: PIP, Flask, Django, Jinja
-                                </li>
-                                <li>
-                                    PHP: Composer, Symfony, Laravel, Blade
-                                </li>
-                                <li>
-                                    Javascript: NPM, Vue.js, React.js
-                                </li>
-                                <li>
-                                    Ruby: Rails
-                                </li>
-                                <li>
-                                    Rust: Cargo
-                                </li>
-                                <li>
-                                    Shell Script
-                                </li>
-                            </ul>
-                            <h5>
-                                Opensource tools
-                            </h5>
-                            <ul>
-                                <li>
-                                    NATS, STAN, JetStream
-                                </li>
-                                <li>
-                                    MQTT, RabbitMQT
-                                </li>
-                                <li>
-                                    SSE
-                                </li>
-                                <li>
-                                    Apache Kafka
-                                </li>
-                                <li>
-                                    Benthos
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="contact-field">
-                        <ul class="contact-list">
-                            <li class="items">
-                                <a href="https://www.linkedin.com/in/amirnhnajafiz21/" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="http://amir-najafizadeh.ir/" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="mailto:najafizadeh21@gmail.com" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
-                                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="items">
-                                <a href="https://github.com/amirhnajafiz" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="card-footer">
-            create and design by amirhossein najafizadeh . all rights reserved <span id="date"></span>
-        </footer>
-    </div>
-    <!-- JS scripts -->
-    <script
-        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"
-    ></script>
-    <script type="module" src="js/script.js"></script>
-    <script src="js/nav-view.js"></script>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<img src="./images/site-logo.png" alt="site logo">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+					<li><a href="#">Page 4</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./images/top-banner-author.jpg" alt="author image">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Jhone</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<h2 class="top-banner__h2">Smith</h2>
+					<span class="brand-span">Author, Writer, Traveler</span>
+				</div>
+				<p>One Man. One Mission. Can He Go Beyond?One Man. One Mission. Can He Go Beyond?</p>
+				<a href="#" class="brand-button">Read bio > </a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="./images/about-me.jpg" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>J</span>
+						<h2 class="universal-h2">hone Smith</h2>
+					</div>
+					<p>Jhone Smith is a short story author, novelist, and award-winning poet.</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<h4>Author</h4>
+						<p class="p-white">See me</p>
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me 2</h2>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<h4>Author</h4>
+						<p class="p-white">See me</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+	<!-- Books and CD -->
+	<section class="fh5co-books">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">New Books And CD</h2>
+			<div class="books">
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-1.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Olivani</h4>
+					<span class="single-book__price">$15.00</span>
+					<!-- star rating -->
+					<div class="rating">
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+					</div>
+					<!-- star rating end -->
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-2.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Molleon’s Life</h4>
+					<span class="single-book__price">$22.00</span>
+					<!-- star rating -->
+					<div class="rating">
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+					</div>
+					<!-- star rating end -->
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-3.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Love is Love</h4>
+					<span class="single-book__price">$25.00</span>
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-4.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Give Me Also</h4>
+					<span class="single-book__price">$30.00</span>
+				</div>
+			</div>
+			<div class="books-brand-button">
+				<a href="#" class="brand-button">View more</a>
+			</div>
+		</div>
+	</section>
+	<!-- Books and CD end -->
+
+	<!-- Counter -->
+	<div class="fh5co-counter counters">
+		<div class="counter-inner site-container">
+			<div class="single-count">
+				<span class="count" data-count="50">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-1.png" alt="counter icon">
+					<p>Books</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="600">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-2.png" alt="counter icon">
+					<p>Pages</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="2000">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-3.png" alt="counter icon">
+					<p>Sales</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="125">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-4.png" alt="counter icon">
+					<p>Awards</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Counter -->
+
+	<!-- Blog -->
+	<section class="fh5co-blog">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">My Blog</h2>
+			<div class="blog-slider blog-inner">
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog1.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog end -->
+
+	<!-- Quotes -->
+	<section class="fh5co-quotes">
+		<div class="site-container">
+			<div class="about-me-slider">
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="./images/quotes.svg" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying 2</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="./images/quotes.svg" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Quotes end -->
+
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+				<h5>Follow me!!</h5>
+				<div class="social-icons">
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+				</div>
+				<h5>Share it!</h5>
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="./images/footer-img.jpg" alt="about me image">
+						<p>Read more about me</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p class="footer-phone">Phone: +958734902847</p>
+						<p>Email : Jhone@Example.com</p>
+						<div class="social-icons">
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<form class="contact-form">
+						<div class="contact-form__input">
+							<input type="text" name="name" placeholder="Name">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<textarea></textarea>
+						<input type="submit" name="submit" value="Submit" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
+				<div class="footer-bottom__img">
+					<img src="./images/footer-mastercard.png" alt="footer image">
+					<img src="./images/footer-paypal.png" alt="footer image">
+					<img src="./images/footer-visa.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
