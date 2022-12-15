@@ -5,9 +5,39 @@ import Header from "./components/Header.vue";
 <template>
   <div>
     <Header />
-    <h1>
-      Home
-    </h1>
+    <div>
+      <h1>
+        Slide show
+      </h1>
+    </div>
+    <div>
+      <h1>
+        About me
+      </h1>
+    </div>
+    <div>
+      <h1>
+        Career
+      </h1>
+    </div>
+    <div>
+      <h1>
+        Skills
+      </h1>
+    </div>
+    <div>
+      <h1>
+        Interests
+      </h1>
+    </div>
+    <div>
+      <h1>
+        Contact me
+      </h1>
+    </div>
+    <div>
+      Footer
+    </div>
   </div>
 </template>
 
