@@ -4,13 +4,11 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div class="header">
-    <div class="wrapper">
-      <div class="nav">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/honors">Honors</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <a href="https://www.github.com">Github</a>
-      </div>
+    <div class="nav">
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/honors">Honors</RouterLink>
+      <RouterLink to="/projects">Projects</RouterLink>
+      <a href="https://www.github.com" style="float: right;">Github</a>
     </div>
   </div>
 </template>
@@ -28,7 +26,6 @@ export default {
   padding: 20px 0;
 
   width: 100%;
-  margin-bottom: 40px;
 
   background-color: #282828;
   color: #f8f8f8;
@@ -49,6 +46,18 @@ export default {
   padding: 0 3rem;
 
   outline: none;
-  color: inherit;
+  color: #c7c7c7;
+
+  transition: 0.5s color;
+
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.selected {
+  color: #ffffff;
 }
 </style>
