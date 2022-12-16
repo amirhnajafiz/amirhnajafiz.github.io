@@ -1,15 +1,12 @@
 <script setup>
 import Header from "./components/Header.vue";
+import Slideshow from "./components/Slideshow.vue";
 </script>
 
 <template>
   <div>
     <Header />
-    <div>
-      <h1>
-        Slide show
-      </h1>
-    </div>
+    <Slideshow />
     <div>
       <h1>
         About me
