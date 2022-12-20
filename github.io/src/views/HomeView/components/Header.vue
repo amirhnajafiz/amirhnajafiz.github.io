@@ -1,26 +1,33 @@
 <template>
   <div id="in-app-header" class="nav">
-    <a href="#">
+    <button v-on:click="scroll('#app-about-me')">
       About Me
-    </a>
-    <a href="#">
+    </button>
+    <button>
       Career
-    </a>
-    <a href="#">
+    </button>
+    <button>
       Skills
-    </a>
-    <a href="#">
+    </button>
+    <button>
       Interests
-    </a>
-    <a href="#">
+    </button>
+    <button>
       Contact Me
-    </a>
+    </button>
   </div>
 </template>
 
 <script>
 export default {
   name: "Header",
+  methods: {
+    scroll(id) {
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }
 }
 </script>
 
@@ -51,18 +58,22 @@ export default {
   font-size: 14px;
 }
 
-.nav a {
+.nav button {
   display: inline-block;
 
   outline: none;
   color: #282828;
+
+  border: 0 solid black;
+
+  background-color: inherit;
 
   text-decoration: none;
 
   transition: 0.5s color;
 }
 
-.nav a:hover {
+.nav button:hover {
   color: #989898;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="holder">
+  <div id="app-about-me" class="holder">
     <div class="image">
       <div class="box">
       </div>
