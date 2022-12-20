@@ -16,39 +16,18 @@
       Contact Me
     </a>
   </div>
-  <button class="btn" v-on:click="toggleHeader">Click</button>
 </template>
 
 <script>
 export default {
   name: "Header",
-  data() {
-    return {
-      open: true,
-    }
-  },
-  methods: {
-    toggleHeader() {
-      let el = document.getElementById("in-app-header")
-
-      if (this.open) {
-        el.style.height = "0"
-        el.style.padding = "0"
-      } else {
-        el.style.height = "60px"
-        el.style.padding = "20px 0"
-      }
-
-      this.open = !this.open
-    }
-  }
 }
 </script>
 
 <style scoped>
 .nav {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   background-color: #ffffff;
 
@@ -59,7 +38,7 @@ export default {
   border-bottom: 1px solid #282828;
 
   position: sticky;
-  top: 50px;
+  top: 58px;
 
   overflow: hidden;
 
@@ -85,20 +64,5 @@ export default {
 
 .nav a:hover {
   color: #989898;
-}
-
-.btn {
-  position: fixed;
-  right: 10px;
-  top: 100px;
-
-  float: right;
-
-  border: 0 solid black;
-  outline: none;
-
-  cursor: pointer;
-
-  padding: 5px;
 }
 </style>
