@@ -2,6 +2,7 @@
 import Header from "./components/Header.vue";
 import Slideshow from "./components/Slideshow.vue";
 import AboutMe from "./components/AboutMe.vue";
+import Career from "./components/Career.vue";
 </script>
 
 <template>
@@ -9,11 +10,7 @@ import AboutMe from "./components/AboutMe.vue";
     <Header />
     <Slideshow />
     <AboutMe />
-    <div>
-      <h1>
-        Career
-      </h1>
-    </div>
+    <Career />
     <div>
       <h1>
         Skills

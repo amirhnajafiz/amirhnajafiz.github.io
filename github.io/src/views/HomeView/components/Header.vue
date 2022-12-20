@@ -46,6 +46,7 @@ export default {
 
   position: sticky;
   top: 58px;
+  z-index: 9999;
 
   overflow: hidden;
 
