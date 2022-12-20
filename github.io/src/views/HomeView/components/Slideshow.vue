@@ -1,18 +1,12 @@
 <template>
-  <div>
-    <h1 :class="index === 0 ? 'active' : 'non-active'">
-      Slide 1
-    </h1>
-    <h1 :class="index === 1 ? 'active' : 'non-active'">
-      Slide 2
-    </h1>
-    <h1 :class="index === 2 ? 'active' : 'non-active'">
-      Slide 3
-    </h1>
-    <h1 :class="index === 3 ? 'active' : 'non-active'">
-      Slide 4
-    </h1>
+  <div class="slideshow">
     <button v-on:click="prevSlide">Prev</button>
+    <div
+        v-for="slide in slides"
+        :class="index === slide.number ? 'active' : 'non-active'"
+    >
+      {{ slide.href }}
+    </div>
     <button v-on:click="nextSlide">Next</button>
   </div>
 </template>
@@ -23,17 +17,31 @@ export default {
   data() {
     return {
       index: 0,
+      slides: [
+        {
+          number: 0,
+          href: "12"
+        },
+        {
+          number: 1,
+          href: "13"
+        },
+        {
+          number: 2,
+          href: "14"
+        }
+      ]
     }
   },
   methods: {
     nextSlide() {
       this.index++
-      this.index = this.index % 4
+      this.index = this.index % this.slides.length
     },
     prevSlide() {
       this.index--
       if (this.index === -1) {
-        this.index = 3
+        this.index = this.slides.length-1
       }
     }
   }

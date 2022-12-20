@@ -95,6 +95,8 @@ export default {
   border: 0 solid black;
   outline: none;
 
+  cursor: pointer;
+
   padding: 5px;
 }
 </style>
