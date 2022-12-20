@@ -1,17 +1,14 @@
 <script setup>
 import Header from "./components/Header.vue";
 import Slideshow from "./components/Slideshow.vue";
+import AboutMe from "./components/AboutMe.vue";
 </script>
 
 <template>
   <div>
     <Header />
     <Slideshow />
-    <div>
-      <h1>
-        About me
-      </h1>
-    </div>
+    <AboutMe />
     <div>
       <h1>
         Career
