@@ -23,9 +23,6 @@ import Skills from "./components/Skills.vue";
         Contact me
       </h1>
     </div>
-    <div>
-      Footer
-    </div>
   </div>
 </template>
 
