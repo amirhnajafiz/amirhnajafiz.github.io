@@ -1,34 +1,17 @@
 <template>
   <div class="timeline">
     <div class="outer">
-      <div class="card">
+      <div
+        class="card"
+        v-for="job in jobs"
+      >
         <div class="info">
-          <h3 class="title">Title 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="info">
-          <h3 class="title">Title 5</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h3 class="title">
+            {{ job.title }}
+          </h3>
+          <p>
+            {{ job.description }}
+          </p>
         </div>
       </div>
     </div>
@@ -37,7 +20,25 @@
 
 <script>
 export default {
-  name: "Career"
+  name: "Career",
+  data() {
+    return {
+      jobs: [
+        {
+          title: "title 1",
+          description: "something"
+        },
+        {
+          title: "title 2",
+          description: "something"
+        },
+        {
+          title: "title 3",
+          description: "something"
+        }
+      ]
+    }
+  },
 }
 </script>
 
@@ -46,7 +47,7 @@ export default {
 .timeline {
   position: relative;
   background: #181818;
-  margin: 20px auto;
+  margin: 80px auto;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -70,7 +71,7 @@ export default {
   content: "";
   position: absolute;
   width: 50%;
-  border: solid orangered;
+  border: solid #00bd7e;
 }
 
 /* Setting the border of top, bottom, left */
@@ -114,14 +115,14 @@ export default {
   display: flex;
   flex-direction: column;
   background: #333;
-  color: gray;
+  color: #bdbdbd;
   border-radius: 10px;
   padding: 10px;
 }
 
 /* Title of the card */
 .title {
-  color: orangered;
+  color: #00bd7e;
   position: relative;
 }
 
@@ -133,7 +134,7 @@ export default {
   height: 10px;
   background: white;
   border-radius: 999px;
-  border: 3px solid orangered;
+  border: 3px solid #00bd7e;
 }
 
 /* text right if the card is even  */
