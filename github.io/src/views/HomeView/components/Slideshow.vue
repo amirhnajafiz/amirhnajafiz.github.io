@@ -1,13 +1,18 @@
 <template>
   <div class="slideshow">
-    <button v-on:click="prevSlide">Prev</button>
+    <button class="side-btn right" v-on:click="prevSlide">
+      {{ '<' }}
+    </button>
     <div
         v-for="slide in slides"
         :class="index === slide.number ? 'active' : 'non-active'"
+        class="big-screen"
     >
       {{ slide.href }}
     </div>
-    <button v-on:click="nextSlide">Next</button>
+    <button class="side-btn left" v-on:click="nextSlide">
+      {{ '>' }}
+    </button>
   </div>
 </template>
 
@@ -55,5 +60,34 @@ export default {
 
 .non-active {
   display: none;
+}
+
+.slideshow {
+  width: 100%;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.big-screen {
+  height: 550px;
+  background-color: #00bd7e;
+  width: 100%;
+}
+
+.side-btn {
+  width: 40px;
+
+  background-color: rgba(205, 205, 205, 0.1);
+  border: 0 solid black;
+
+  transition: 0.3s all;
+}
+
+.side-btn:hover {
+  background-color: rgba(205, 205, 205, 0.7);
 }
 </style>

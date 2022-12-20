@@ -48,7 +48,9 @@ export default {
 <style scoped>
 .nav {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  background-color: #ffffff;
 
   height: 60px;
 
@@ -57,7 +59,7 @@ export default {
   border-bottom: 1px solid #282828;
 
   position: sticky;
-  top: 0;
+  top: 50px;
 
   overflow: hidden;
 
@@ -86,9 +88,9 @@ export default {
 }
 
 .btn {
-  position: relative;
+  position: fixed;
   right: 10px;
-  top: -40px;
+  top: 100px;
 
   float: right;
 
