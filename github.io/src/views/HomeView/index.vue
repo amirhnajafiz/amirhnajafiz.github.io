@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutMe.vue";
 import Career from "./components/Career.vue";
 import Skills from "./components/Skills.vue";
 import Interests from "./components/Interests.vue";
+import Contact from "./components/Contact.vue";
 </script>
 
 <template>
@@ -15,18 +16,6 @@ import Interests from "./components/Interests.vue";
     <Career />
     <Skills />
     <Interests />
-    <div>
-      <h1>
-        Contact me
-      </h1>
-    </div>
+    <Contact />
   </div>
 </template>
-
-<script>
-
-</script>
-
-<style scoped>
-
-</style>
