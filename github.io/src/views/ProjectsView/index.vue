@@ -1,13 +1,42 @@
+<script setup>
+import Project from "./component/Project.vue";
+</script>
+
 <template>
   <div>
     <h1>
       Projects
     </h1>
+    <Project
+      v-for="project in projects"
+      :title="project.title"
+      :description="project.description"
+      :link="project.link"
+      :image="project.image"
+      :color="project.color"
+      :background_color="project.background_color"
+    />
   </div>
 </template>
 
 <script>
-
+export default {
+  name: "ProjectsView",
+  data() {
+    return {
+      projects: [
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          image: "image",
+          color: "black",
+          background_color: "gray"
+        },
+      ]
+    }
+  }
+}
 </script>
 
 <style scoped>
