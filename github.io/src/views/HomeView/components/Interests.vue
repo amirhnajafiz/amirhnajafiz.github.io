@@ -36,6 +36,18 @@ export default {
         {
           title: "title",
           description: "des"
+        },
+        {
+          title: "title",
+          description: "des"
+        },
+        {
+          title: "title",
+          description: "des"
+        },
+        {
+          title: "title",
+          description: "des"
         }
       ]
     }
@@ -45,7 +57,14 @@ export default {
 
 <style scoped>
 .wrapper {
+  background-color: #2c3e50;
+  color: #00bd7e;
+
+  padding: 50px 100px;
+  margin-bottom: 80px;
+
   display: grid;
   grid-template-columns: auto auto auto auto;
+  row-gap: 50px;
 }
 </style>
