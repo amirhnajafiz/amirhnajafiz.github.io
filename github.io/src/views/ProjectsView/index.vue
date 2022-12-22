@@ -4,9 +4,9 @@ import Project from "./component/Project.vue";
 
 <template>
   <div>
-    <h1>
+    <div class="headline">
       Projects
-    </h1>
+    </div>
     <Project
       v-for="project in projects"
       :title="project.title"
@@ -40,5 +40,8 @@ export default {
 </script>
 
 <style scoped>
-
+.headline {
+  font-size: 5em;
+  padding: 50px 200px;
+}
 </style>
