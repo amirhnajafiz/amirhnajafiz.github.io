@@ -22,25 +22,28 @@ defineProps({
 </script>
 
 <template>
-  <div
-      class="wrapper"
-  >
-    <div
-        class="description"
-        :style="'color: '+color+'; background-color:'+background_color"
-    >
-      <h3 style="margin-bottom: 20px;">
-        {{ title }}
-      </h3>
-      <p style="margin: 50px 10px;">
-        {{ description }}
-      </p>
-      <a class="link" :href="image" target="_blank">
-        View Project
-      </a>
-    </div>
-    <div class="image">
-      <img :src="image" alt="image" />
+  <div class="outer">
+    <div class="wrapper">
+      <div
+          class="description"
+          :style="'color: '+color+'; background-color:'+background_color"
+      >
+        <h3 style="margin-bottom: 20px;">
+          {{ title }}
+        </h3>
+        <p style="margin: 50px 10px;">
+          {{ description }}
+        </p>
+        <a class="link" :href="image" target="_blank">
+          View Project
+        </a>
+      </div>
+      <div
+          :style="'color: '+color+'; background-color:'+background_color"
+          class="image"
+      >
+        <div class="inner-image"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -53,10 +56,6 @@ export default {
 
 <style scoped>
 .wrapper {
-  width: 70%;
-
-  margin: 80px auto;
-
   display: grid;
   grid-template-columns: auto 300px;
 }
@@ -74,9 +73,19 @@ export default {
   width: 300px;
   height: 250px;
 
-  background: #00bd7e;
   border-top-right-radius: 125px;
   border-bottom-right-radius: 125px;
+}
+
+.inner-image {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  float: right;
+
+  background: #00bd7e;
 }
 
 .link {
@@ -85,5 +94,16 @@ export default {
   text-decoration-line: none;
 
   color: inherit;
+}
+
+.outer {
+  width: 60%;
+
+  margin: 80px auto;
+
+  border: 1px solid black;
+  padding: 5px;
+
+  border-radius: 5px 130px 130px 5px;
 }
 </style>
