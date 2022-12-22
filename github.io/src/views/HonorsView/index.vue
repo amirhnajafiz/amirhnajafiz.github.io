@@ -4,9 +4,9 @@ import Honor from "./components/Honor.vue";
 
 <template>
   <div>
-    <h1>
+    <div class="headline">
       Honors
-    </h1>
+    </div>
     <Honor
         v-for="h in honors"
         :name="h.name"
@@ -43,5 +43,8 @@ export default {
 </script>
 
 <style scoped>
-
+.headline {
+  font-size: 5em;
+  padding: 50px 200px;
+}
 </style>
