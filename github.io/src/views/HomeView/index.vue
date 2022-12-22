@@ -4,6 +4,7 @@ import Slideshow from "./components/Slideshow.vue";
 import AboutMe from "./components/AboutMe.vue";
 import Career from "./components/Career.vue";
 import Skills from "./components/Skills.vue";
+import Interests from "./components/Interests.vue";
 </script>
 
 <template>
@@ -13,11 +14,7 @@ import Skills from "./components/Skills.vue";
     <AboutMe />
     <Career />
     <Skills />
-    <div>
-      <h1>
-        Interests
-      </h1>
-    </div>
+    <Interests />
     <div>
       <h1>
         Contact me
