@@ -32,8 +32,24 @@ export default {
           description: "des",
           link: "link",
           language: "image",
-          color: "black",
-          background: "gray"
+          color: "white",
+          background: "red"
+        },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "white",
+          background: "blue"
+        },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "white",
+          background: "green"
         },
         {
           title: "title",
@@ -49,30 +65,14 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background: "gray"
+          background: "orange"
         },
         {
           title: "title",
           description: "des",
           link: "link",
           language: "image",
-          color: "black",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "black",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "black",
+          color: "white",
           background: "gray"
         }
       ]

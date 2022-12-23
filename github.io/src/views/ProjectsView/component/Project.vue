@@ -90,7 +90,7 @@ export default {
 
 <style scoped>
 .outer {
-  padding: 5px;
+  padding: 4px;
   border: 1px solid black;
   border-radius: 10px;
 
