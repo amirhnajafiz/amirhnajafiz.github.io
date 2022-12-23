@@ -34,15 +34,16 @@ defineProps({
         <p style="margin: 50px 10px;">
           {{ description }}
         </p>
-        <a class="link" :href="image" target="_blank">
-          View Project
-        </a>
       </div>
       <div
           :style="'color: '+color+'; background-color:'+background_color"
           class="image"
       >
-        <div class="inner-image"></div>
+        <a
+            :href="image"
+            target="_blank"
+            class="inner-image link"
+        ></a>
       </div>
     </div>
   </div>
@@ -55,31 +56,40 @@ export default {
 </script>
 
 <style scoped>
+.outer {
+  margin: 80px auto;
+
+  border: 1px solid black;
+  padding: 5px;
+
+  border-radius: 5px 130px 130px 5px;
+}
+
 .wrapper {
   display: grid;
-  grid-template-columns: auto 300px;
+  grid-template-columns: auto 100px;
 }
 
 .description {
-  padding: 25px 40px 50px;
+  padding: 0 40px 0;
 
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 
-  height: 250px;
+  height: 100px;
 }
 
 .image {
-  width: 300px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
 
   border-top-right-radius: 125px;
   border-bottom-right-radius: 125px;
 }
 
 .inner-image {
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
 
   border-radius: 50%;
 
@@ -94,16 +104,5 @@ export default {
   text-decoration-line: none;
 
   color: inherit;
-}
-
-.outer {
-  width: 60%;
-
-  margin: 80px auto;
-
-  border: 1px solid black;
-  padding: 5px;
-
-  border-radius: 5px 130px 130px 5px;
 }
 </style>
