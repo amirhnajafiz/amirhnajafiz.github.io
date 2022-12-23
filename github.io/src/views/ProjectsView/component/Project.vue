@@ -22,29 +22,31 @@ defineProps({
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="headline">
-      {{ title }}
-    </div>
-    <p class="text">
-      {{ description }}
-    </p>
-    <div class="row">
-      <div class="inner-row">
-        <div>
-          {{ language }}
-        </div>
-        <div
-            class="circle"
-            :style="'background-color:' + color"
-        ></div>
+  <div class="outer">
+    <div class="wrapper">
+      <div class="headline">
+        {{ title }}
       </div>
-      <a
-          class="link"
-          :href="link"
-          target="_blank">
-        See project
-      </a>
+      <p class="text">
+        {{ description }}
+      </p>
+      <div class="row">
+        <div class="inner-row">
+          <div>
+            {{ language }}
+          </div>
+          <div
+              class="circle"
+              :style="'background-color:' + color"
+          ></div>
+        </div>
+        <a
+            class="link"
+            :href="link"
+            target="_blank">
+          See project
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -56,8 +58,28 @@ export default {
 </script>
 
 <style scoped>
+.outer {
+  width: 30%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .wrapper {
-  width: 100%;
+  padding: 10px 15px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.headline {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.text {
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
 .row {
