@@ -23,12 +23,13 @@ defineProps({
 
 <template>
   <div
+      :style="'background-color:' + main_color + '; border-color:' + main_border"
       v-on:mouseenter="over"
       v-on:mouseleave="out"
       class="outer"
   >
     <div
-        :style="'background-color:' + main_color"
+        :style="'background-color:' + main_color + '; border-color:' + main_border"
         class="wrapper"
     >
       <div class="headline">
@@ -60,20 +61,24 @@ defineProps({
 
 <script>
 const base = "#ffffff"
+const bbase = "black"
 
 export default {
   name: "Project",
   data() {
     return {
-      main_color: base
+      main_color: base,
+      main_border: bbase
     }
   },
   methods: {
     over() {
       this.main_color = this.$props.other
+      this.main_border = this.$props.other
     },
     out() {
       this.main_color = base
+      this.main_border = bbase
     }
   }
 }
@@ -84,6 +89,8 @@ export default {
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
+
+  transition: 0.5s all;
 }
 
 .wrapper {
@@ -91,6 +98,8 @@ export default {
 
   border: 1px solid black;
   border-radius: 5px;
+
+  transition: 0.5s all;
 }
 
 .headline {
