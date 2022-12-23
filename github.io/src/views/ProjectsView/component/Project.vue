@@ -59,7 +59,7 @@ export default {
 
 <style scoped>
 .outer {
-  width: 30%;
+  width: 20%;
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
@@ -107,5 +107,11 @@ export default {
 .link {
   text-decoration-line: none;
   color: inherit;
+
+  border-bottom: 0 solid black;
+}
+
+.link:hover {
+  border-bottom-width: 1px;
 }
 </style>
