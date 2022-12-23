@@ -15,7 +15,7 @@ defineProps({
   color: {
     type: String
   },
-  other: {
+  background: {
     type: String
   }
 })
@@ -23,13 +23,13 @@ defineProps({
 
 <template>
   <div
-      :style="'background-color:' + main_color + '; border-color:' + main_border"
+      :style="'background-color:' + currentBackground + '; border-color:' + currentBorder + '; color:' + currentColor"
       v-on:mouseenter="over"
       v-on:mouseleave="out"
       class="outer"
   >
     <div
-        :style="'background-color:' + main_color + '; border-color:' + main_border"
+        :style="'background-color:' + currentBackground + '; border-color:' + currentBorder"
         class="wrapper"
     >
       <div class="headline">
@@ -45,7 +45,7 @@ defineProps({
           </div>
           <div
               class="circle"
-              :style="'background-color:' + color"
+              :style="'background-color:' + background"
           ></div>
         </div>
         <a
@@ -60,25 +60,29 @@ defineProps({
 </template>
 
 <script>
-const base = "#ffffff"
-const bbase = "black"
+const baseBackground = "white"
+const baseTextColor = "black"
+const baseBorderColor = "black"
 
 export default {
   name: "Project",
   data() {
     return {
-      main_color: base,
-      main_border: bbase
+      currentBackground: baseBackground,
+      currentBorder: baseBorderColor,
+      currentColor: baseTextColor
     }
   },
   methods: {
     over() {
-      this.main_color = this.$props.other
-      this.main_border = this.$props.other
+      this.currentColor = this.$props.color
+      this.currentBorder = this.$props.background
+      this.currentBackground = this.$props.background
     },
     out() {
-      this.main_color = base
-      this.main_border = bbase
+      this.currentBackground = baseBackground
+      this.currentBorder = baseBorderColor
+      this.currentColor = baseTextColor
     }
   }
 }
