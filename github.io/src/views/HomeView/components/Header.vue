@@ -3,16 +3,16 @@
     <button v-on:click="scroll('#app-about-me')">
       About Me
     </button>
-    <button>
+    <button v-on:click="scroll('#app-career')">
       Career
     </button>
-    <button>
+    <button v-on:click="scroll('#app-skills')">
       Skills
     </button>
-    <button>
+    <button v-on:click="scroll('#app-interests')">
       Interests
     </button>
-    <button>
+    <button v-on:click="scroll('#app-contact-me')">
       Contact Me
     </button>
   </div>

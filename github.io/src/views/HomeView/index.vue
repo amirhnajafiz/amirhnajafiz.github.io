@@ -12,10 +12,10 @@ import Contact from "./components/Contact.vue";
   <div>
     <Header />
     <Slideshow />
-    <AboutMe />
-    <Career />
-    <Skills />
-    <Interests />
-    <Contact />
+    <AboutMe id="app-about-me" />
+    <Career id="app-career" />
+    <Skills id="app-skills" />
+    <Interests id="app-interests" />
+    <Contact id="app-contact-me" />
   </div>
 </template>
