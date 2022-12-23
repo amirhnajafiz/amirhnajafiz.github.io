@@ -52,7 +52,14 @@ export default {
       if (this.index === -1) {
         this.index = this.slides.length-1
       }
+    },
+    change() {
+      this.nextSlide()
+      setTimeout(this.change, 2000)
     }
+  },
+  mounted() {
+    this.change()
   }
 }
 </script>
