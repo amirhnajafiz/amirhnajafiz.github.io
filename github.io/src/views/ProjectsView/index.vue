@@ -7,15 +7,17 @@ import Project from "./component/Project.vue";
     <div class="headline">
       Projects
     </div>
-    <Project
-      v-for="project in projects"
-      :title="project.title"
-      :description="project.description"
-      :link="project.link"
-      :language="project.language"
-      :color="project.color"
-      :background_color="project.background_color"
-    />
+    <div class="holder">
+      <Project
+          v-for="project in projects"
+          :title="project.title"
+          :description="project.description"
+          :link="project.link"
+          :language="project.language"
+          :color="project.color"
+          :background_color="project.background_color"
+      />
+    </div>
   </div>
 </template>
 
@@ -33,6 +35,46 @@ export default {
           color: "black",
           background_color: "gray"
         },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "black",
+          background_color: "gray"
+        },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "black",
+          background_color: "gray"
+        },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "black",
+          background_color: "gray"
+        },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "black",
+          background_color: "gray"
+        },
+        {
+          title: "title",
+          description: "des",
+          link: "link",
+          language: "image",
+          color: "black",
+          background_color: "gray"
+        }
       ]
     }
   }
@@ -43,5 +85,17 @@ export default {
 .headline {
   font-size: 5em;
   padding: 50px 200px;
+}
+
+.holder {
+  width: 70%;
+
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  column-gap: 20px;
+  row-gap: 20px;
 }
 </style>

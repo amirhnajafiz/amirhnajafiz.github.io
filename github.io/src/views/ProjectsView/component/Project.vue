@@ -59,7 +59,6 @@ export default {
 
 <style scoped>
 .outer {
-  width: 20%;
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
