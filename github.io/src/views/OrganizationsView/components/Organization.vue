@@ -39,7 +39,15 @@ export default {
 
 <style scoped>
 .wrapper {
+  width: 50%;
+
+  margin: 0 auto;
+
   display: grid;
   grid-template-columns: 30% 70%;
+
+  border-radius: 5px;
+
+  background: #00bd7e;
 }
 </style>
