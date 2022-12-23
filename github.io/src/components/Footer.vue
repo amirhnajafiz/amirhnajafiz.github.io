@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    create and design by amirhossein-najafizadeh
+    create and design by <b>amirhossein-najafizadeh</b>
   </div>
 </template>
 

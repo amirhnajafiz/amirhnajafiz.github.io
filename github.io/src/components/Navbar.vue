@@ -77,8 +77,4 @@ export default {
 .nav a:hover {
   color: #ffffff;
 }
-
-.selected {
-  color: #ffffff;
-}
 </style>
