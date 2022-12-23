@@ -22,8 +22,15 @@ defineProps({
 </script>
 
 <template>
-  <div class="outer">
-    <div class="wrapper">
+  <div
+      v-on:mouseenter="over"
+      v-on:mouseleave="out"
+      class="outer"
+  >
+    <div
+        :style="'background-color:' + main_color"
+        class="wrapper"
+    >
       <div class="headline">
         {{ title }}
       </div>
@@ -52,8 +59,23 @@ defineProps({
 </template>
 
 <script>
+const base = "#ffffff"
+
 export default {
-  name: "Project"
+  name: "Project",
+  data() {
+    return {
+      main_color: base
+    }
+  },
+  methods: {
+    over() {
+      this.main_color = this.$props.other
+    },
+    out() {
+      this.main_color = base
+    }
+  }
 }
 </script>
 

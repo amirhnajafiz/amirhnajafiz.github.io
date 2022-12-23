@@ -15,7 +15,7 @@ import Project from "./component/Project.vue";
           :link="project.link"
           :language="project.language"
           :color="project.color"
-          :background_color="project.background_color"
+          :other="project.other"
       />
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background_color: "gray"
+          other: "gray"
         },
         {
           title: "title",
@@ -41,7 +41,7 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background_color: "gray"
+          other: "gray"
         },
         {
           title: "title",
@@ -49,7 +49,7 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background_color: "gray"
+          other: "gray"
         },
         {
           title: "title",
@@ -57,7 +57,7 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background_color: "gray"
+          other: "gray"
         },
         {
           title: "title",
@@ -65,7 +65,7 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background_color: "gray"
+          other: "gray"
         },
         {
           title: "title",
@@ -73,7 +73,7 @@ export default {
           link: "link",
           language: "image",
           color: "black",
-          background_color: "gray"
+          other: "gray"
         }
       ]
     }
