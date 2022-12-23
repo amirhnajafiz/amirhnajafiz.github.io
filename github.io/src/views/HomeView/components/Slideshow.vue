@@ -76,7 +76,7 @@ export default {
 .slideshow {
   width: 100%;
 
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 
   display: flex;
   flex-direction: row;

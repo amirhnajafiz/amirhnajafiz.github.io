@@ -61,7 +61,7 @@ export default {
   color: #00bd7e;
 
   padding: 50px 100px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 
   display: grid;
   grid-template-columns: auto auto auto auto;

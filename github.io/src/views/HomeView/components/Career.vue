@@ -47,7 +47,7 @@ export default {
 .timeline {
   position: relative;
   background: #181818;
-  margin: 80px auto;
+  margin: 80px auto 200px;
   padding: 20px;
   display: flex;
   justify-content: center;

@@ -25,7 +25,7 @@ export default {
   grid-template-columns: 40% 60%;
 
   margin-top: 120px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 
 .image {

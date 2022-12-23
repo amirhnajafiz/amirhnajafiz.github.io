@@ -65,7 +65,7 @@ export default {
   background-color: #00bd7e;
 
   padding: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 
   display: flex;
   flex-direction: row;
