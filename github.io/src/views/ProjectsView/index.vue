@@ -12,7 +12,7 @@ import Project from "./component/Project.vue";
       :title="project.title"
       :description="project.description"
       :link="project.link"
-      :image="project.image"
+      :language="project.language"
       :color="project.color"
       :background_color="project.background_color"
     />
@@ -29,7 +29,7 @@ export default {
           title: "title",
           description: "des",
           link: "link",
-          image: "image",
+          language: "image",
           color: "black",
           background_color: "gray"
         },
