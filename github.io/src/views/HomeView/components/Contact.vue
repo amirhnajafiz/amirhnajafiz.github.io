@@ -1,8 +1,6 @@
 <template>
   <div class="holder">
-    <div class="image">
-      Nice image
-    </div>
+    <img src="https://digitalgopi.com/wp-content/uploads/2021/01/lets-connect.png" class="image" alt="contact me" />
     <div class="text">
       <div class="row">
         <div>
@@ -50,13 +48,17 @@ export default {
 
   justify-content: center;
 
-  background-color: #2c3e50;
+  background-color: #084887;
+  color: #f7f5fb;
   min-height: 200px;
 }
 
 .image {
-  background-color: #00bd7e;
+  background-color: #f9ab55;
+
+  margin: 0 auto;
   min-height: 200px;
+  max-width: 100%;
 }
 
 .row {
