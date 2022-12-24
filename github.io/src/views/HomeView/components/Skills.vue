@@ -28,29 +28,34 @@ export default {
         {
           title: "DevOps",
           skills: [
-              "no",
-              "noting"
+              "Linux",
+              "Docker",
+              "Kubernetes",
+              "Helm Charts"
           ]
         },
         {
           title: "SRE",
           skills: [
-              "hi",
-              "something"
+              "CI/CD",
+              "Grafana",
+              "Prometheus"
           ]
         },
         {
           title: "Backend",
           skills: [
-              "hello"
+              "Golang",
+              "Fiber",
+              "Echo"
           ]
         },
         {
           title: "Software",
           skills: [
-              "dp",
-              "algo",
-              "ds"
+              "Microservice",
+              "Monolithic",
+              "Unit testing"
           ]
         }
       ]
@@ -62,7 +67,7 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  background-color: #00bd7e;
+  background-color: #f9ab55;
 
   padding: 50px;
   margin-bottom: 200px;
@@ -71,11 +76,11 @@ export default {
   flex-direction: row;
   justify-content: space-evenly;
 
-  color: #2c3e50;
+  color: #282828;
 }
 
 .box {
-  border: 1px solid #f8f8f8;
+  border: 1px solid #f7f5fb;
   border-radius: 5px;
 }
 
@@ -84,9 +89,9 @@ export default {
 
   padding: 40px 60px;
 
-  background-color: #f8f8f8;
+  background-color: #f7f5fb;
 
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #f7f5fb;
 }
 
 .item-holder {
