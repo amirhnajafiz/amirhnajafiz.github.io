@@ -25,16 +25,20 @@ export default {
     return {
       jobs: [
         {
-          title: "title 1",
-          description: "something"
+          title: "Software Engineer as Snapp!",
+          description: "Starting my position as a Software Engineer in Snapp company."
         },
         {
-          title: "title 2",
-          description: "something"
+          title: "PHP/Laravel Developer",
+          description: "Working as a PHP Backend developer freelancer."
         },
         {
-          title: "title 3",
-          description: "something"
+          title: "Wordpress Developer",
+          description: "Building wordpress templates and websites."
+        },
+        {
+          title: "Frontend Developer",
+          description: "Working as a Frontend developer by accepting Vue.js projects."
         }
       ]
     }
@@ -46,8 +50,12 @@ export default {
 /* Timeline Container */
 .timeline {
   position: relative;
-  background: #181818;
+
+  background: #909cc2;
+  color: #f7f5fb;
+
   margin: 80px auto 200px;
+
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -71,7 +79,7 @@ export default {
   content: "";
   position: absolute;
   width: 50%;
-  border: solid #00bd7e;
+  border: solid #f58a07;
 }
 
 /* Setting the border of top, bottom, left */
@@ -114,15 +122,21 @@ export default {
 .info {
   display: flex;
   flex-direction: column;
-  background: #333;
-  color: #bdbdbd;
+
+  text-align: justify;
+
+  background: #084887;
+  color: #f7f5fb;
   border-radius: 10px;
   padding: 10px;
 }
 
 /* Title of the card */
 .title {
-  color: #00bd7e;
+  color: #f58a07;
+
+  margin-bottom: 20px;
+
   position: relative;
 }
 
@@ -134,7 +148,7 @@ export default {
   height: 10px;
   background: white;
   border-radius: 999px;
-  border: 3px solid #00bd7e;
+  border: 3px solid #f58a07;
 }
 
 /* text right if the card is even  */
