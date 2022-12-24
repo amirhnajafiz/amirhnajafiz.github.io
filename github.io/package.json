@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gabojkz/vue_moveable_v3": "^0.0.3-semantically-released",
     "animejs": "^3.2.1",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
