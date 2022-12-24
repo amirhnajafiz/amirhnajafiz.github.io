@@ -23,7 +23,7 @@ img {
   -webkit-mask: var(--m);
   mask: var(--m);
   transition: .5s linear;
-  filter: grayscale(.5);
+  filter: grayscale(.8);
   cursor: pointer;
 }
 
