@@ -59,8 +59,8 @@ export default {
 
   width: 100%;
 
-  background-color: #282828;
-  color: #f8f8f8;
+  background-color: #084887;
+  color: #f7f5fb;
 
   position: sticky;
   top: 0;
@@ -79,7 +79,7 @@ export default {
   padding: 0 3rem;
 
   outline: none;
-  color: #c7c7c7;
+  color: #f7f5fb;
 
   transition: 0.5s color;
 
@@ -87,6 +87,6 @@ export default {
 }
 
 .nav a:hover {
-  color: #ffffff;
+  color: #a9a9a9;
 }
 </style>

@@ -16,7 +16,7 @@ export default {
 
   padding: 10px 0;
 
-  color: #bdbdbd;
+  color: #084887;
   font-size: 0.8em;
   border-top: 1px solid #dcdcdc;
 }

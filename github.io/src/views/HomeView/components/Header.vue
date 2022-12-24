@@ -36,13 +36,13 @@ export default {
   width: 100%;
   margin-bottom: 30px;
 
-  background-color: #ffffff;
+  background-color: #f7f5fb;
 
   height: 60px;
 
   padding: 20px 0;
 
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid #084887;
 
   position: sticky;
   top: 58px;
@@ -63,15 +63,17 @@ export default {
   display: inline-block;
 
   outline: none;
-  color: #282828;
+  color: #084887;
 
-  border: 0 solid black;
+  border: 0 solid #084887;
 
   background-color: inherit;
 
   text-decoration: none;
 
   transition: 0.5s color;
+
+  cursor: pointer;
 }
 
 .nav button:hover {
