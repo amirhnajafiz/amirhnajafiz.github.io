@@ -8,8 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
+    "vue-piece-slider": "^1.0.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

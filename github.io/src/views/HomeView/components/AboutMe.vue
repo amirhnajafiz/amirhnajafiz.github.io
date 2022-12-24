@@ -4,7 +4,7 @@
       <div class="box">
       </div>
       <div class="text">
-        <span class="bold">A</span>mir Hossein
+        <span class="bold">A</span>mir <span class="bold">H</span>ossein
       </div>
     </div>
     <div class="article">
@@ -30,7 +30,7 @@ export default {
 
 .image {
   background-color: #00bd7e;
-  height: 300px;
+  height: 350px;
 }
 
 .box {
@@ -61,7 +61,6 @@ export default {
 
 .article {
   background-color: #2c3e50;
-  height: 300px;
 
   color: #f8f8f8;
 
