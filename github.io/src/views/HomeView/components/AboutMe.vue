@@ -1,8 +1,11 @@
 <template>
   <div class="holder">
     <div class="image">
-      <div class="box">
-      </div>
+      <img
+          src="https://avatars.githubusercontent.com/u/58415967?v=4"
+          class="box"
+          alt="user image"
+      />
       <div class="text">
         <span class="bold">A</span>mir <span class="bold">H</span>ossein
       </div>
@@ -29,7 +32,7 @@ export default {
 }
 
 .image {
-  background-color: #00bd7e;
+  background-color: #f58a07;
   height: 350px;
 }
 
@@ -51,18 +54,20 @@ export default {
 
   left: 50%;
 
-  color: #2c3e50;
+  color: #f7f5fb;
   font-size: 2em;
 }
 
 .bold {
   font-size: 3em;
+
+  color: #282828;
 }
 
 .article {
-  background-color: #2c3e50;
+  background-color: #f9ab55;
 
-  color: #f8f8f8;
+  color: #282828;
 
   text-align: justify;
 
