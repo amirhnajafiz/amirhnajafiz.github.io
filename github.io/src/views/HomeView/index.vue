@@ -1,6 +1,5 @@
 <script setup>
 import Header from "./components/Header.vue";
-import Slideshow from "./components/Slideshow.vue";
 
 import AboutMe from "./components/AboutMe.vue";
 import Career from "./components/Career.vue";
@@ -12,7 +11,6 @@ import Contact from "./components/Contact.vue";
 <template>
   <div>
     <Header />
-    <Slideshow />
 
     <AboutMe id="app-about-me" />
     <Career id="app-career" />
