@@ -47,7 +47,5 @@ export default {
   grid-template-columns: 30% 70%;
 
   border-radius: 5px;
-
-  background: #00bd7e;
 }
 </style>

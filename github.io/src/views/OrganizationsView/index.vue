@@ -71,6 +71,12 @@ export default {
           description: "des",
           address: "link",
           image: "image"
+        },
+        {
+          title: "org 1",
+          description: "des",
+          address: "link",
+          image: "image"
         }
       ]
     }
@@ -81,7 +87,9 @@ export default {
 <style scoped>
 .holder {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+
+  padding: 0 150px;
 
   column-gap: 20px;
   row-gap: 80px;
