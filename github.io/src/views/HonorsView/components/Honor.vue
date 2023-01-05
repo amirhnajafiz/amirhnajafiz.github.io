@@ -44,6 +44,10 @@ export default {
   border-top: 1px solid #dadada;
 }
 
+.wrapper:first-child{
+  border-top: 0;
+}
+
 .little {
   font-size: 0.7em;
   float: right;

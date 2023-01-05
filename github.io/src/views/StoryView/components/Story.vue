@@ -13,14 +13,14 @@ defineProps({
 </script>
 
 <template>
-  <div>
-    <h3>
+  <div class="wrapper">
+    <h3 style="margin-bottom: 20px;">
       {{ title }}
     </h3>
-    <p>
+    <p style="margin-bottom: 20px;">
       {{ description }}
     </p>
-    <small>
+    <small class="little">
       {{ link }}
     </small>
   </div>
@@ -33,5 +33,22 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  width: 72%;
 
+  margin: 80px auto 100px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #dadada;
+}
+
+.wrapper:first-child{
+  border-top: 0;
+}
+
+.little {
+  font-size: 0.7em;
+  float: right;
+}
 </style>
