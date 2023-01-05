@@ -10,6 +10,6 @@ mv github.io/dist ./
 
 mv dist/* .
 
-mv dist/assets ./assets
+mv dist/assets/* ./assets/*
 
 rmdir dist
