@@ -17,14 +17,14 @@ defineProps({
 
 <template>
   <div class="wrapper">
-    <div>
-      {{ image }}
-    </div>
+    <a :href="address" target="_blank">
+      <img :src="image" width="50" style="border-radius: 5px;" />
+    </a>
     <div>
       <h3>
         {{ title }}
       </h3>
-      <p>
+      <p style="font-size: 0.8em;">
         {{ description }}
       </p>
     </div>
@@ -40,12 +40,9 @@ export default {
 <style scoped>
 .wrapper {
   width: 50%;
-
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: 30% 70%;
-
   border-radius: 5px;
 }
 </style>

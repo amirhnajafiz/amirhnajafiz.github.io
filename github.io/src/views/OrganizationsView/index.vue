@@ -25,40 +25,40 @@ export default {
     return {
       organizations: [
         {
-          title: "org 1",
-          description: "des",
+          title: "Stallion",
+          description: "Official Stallion message broker.",
           address: "link",
           image: "image"
         },
         {
-          title: "org 1",
-          description: "des",
+          title: "Daralfonoon",
+          description: "CEIT / AUT Daralfonoon",
           address: "link",
           image: "image"
         },
         {
-          title: "org 1",
-          description: "des",
+          title: "ICPC",
+          description: "Amirkabir ACM",
           address: "link",
           image: "image"
         },
         {
-          title: "org 1",
-          description: "des",
+          title: "Linuxfest",
+          description: "CEIT Linux festival",
           address: "link",
           image: "image"
         },
         {
-          title: "org 1",
-          description: "des",
+          title: "CEIT-AUT",
+          description: "My university projects.",
           address: "link",
           image: "image"
         },
         {
-          title: "org 1",
-          description: "des",
-          address: "link",
-          image: "image"
+          title: "SNAPP Incubator",
+          description: "Growing snapp-cab open source projects.",
+          address: "https://github.com/snapp-incubator",
+          image: "https://avatars.githubusercontent.com/u/89763510?s=200&v=4"
         },
         {
           title: "org 1",
@@ -88,12 +88,9 @@ export default {
 .holder {
   display: grid;
   grid-template-columns: auto auto auto;
-
   padding: 0 150px;
-
   column-gap: 20px;
   row-gap: 80px;
-
   margin: 80px 0;
 }
 
