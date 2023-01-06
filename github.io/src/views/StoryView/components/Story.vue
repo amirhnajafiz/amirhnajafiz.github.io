@@ -35,11 +35,8 @@ export default {
 <style scoped>
 .wrapper {
   width: 72%;
-
   margin: 80px auto 100px;
-
   padding-top: 20px;
-
   border-top: 1px solid #dadada;
 }
 
@@ -50,5 +47,15 @@ export default {
 .little {
   font-size: 0.7em;
   float: right;
+  outline: none;
+  color: #f7f5fb;
+  text-decoration: none;
+  background-color: #888888;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.little:hover {
+  background-color: #202020;
 }
 </style>
