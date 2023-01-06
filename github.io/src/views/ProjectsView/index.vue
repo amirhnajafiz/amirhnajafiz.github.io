@@ -60,92 +60,44 @@ export default {
           background: "#c0c0c0"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "black",
-          background: "orange"
+          title: "JetStream Mirroring",
+          description: "Mirror jet-stream clusters with benthos.",
+          link: "https://github.com/amirhnajafiz/jetstream-mirroring",
+          language: "Go",
+          color: "#ffffff",
+          background: "#fea5a5"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
+          title: "Debezium Charts",
+          description: "Creating helm charts for Debezium cluster.",
+          link: "https://github.com/snapp-incubator/debezium-chart",
+          language: "Smarty",
+          color: "#000",
+          background: "#ffd97a"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
+          title: "Explorer",
+          description: "Parse every JSON object in Golang.",
+          link: "https://github.com/amirhnajafiz/explorer",
+          language: "Go",
+          color: "#000",
+          background: "#4dfff3"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
+          title: "Pyramid",
+          description: "Fast generic heap structure in Golang.",
+          link: "https://github.com/amirhnajafiz/pyramid",
+          language: "Go",
+          color: "#000",
+          background: "#8b4dff"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
-        },
-        {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "gray"
+          title: "Gitgle",
+          description: "Github users search engine.",
+          link: "https://github.com/amirhnajafiz/gitgle",
+          language: "JavaScript",
+          color: "#000",
+          background: "#fff48c"
         }
       ]
     }
