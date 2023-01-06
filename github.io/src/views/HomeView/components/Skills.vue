@@ -28,7 +28,8 @@ export default {
         {
           title: "DevOps",
           skills: [
-              "Linux",
+              "MacOS, Linux",
+              "Nginx",
               "Docker",
               "Kubernetes",
               "Helm Charts"
@@ -39,15 +40,19 @@ export default {
           skills: [
               "CI/CD",
               "Grafana",
-              "Prometheus"
+              "Prometheus",
+              "Harbor",
+              "OpenShift"
           ]
         },
         {
           title: "Backend",
           skills: [
-              "Golang",
-              "Fiber",
-              "Echo"
+              "Golang/Python/Js",
+              "Fiber/Echo/Fasthttp",
+              "SQL/MySQL/Redis/MongoDB/S3",
+              "HTTP/HTTPS/DASH/QUIC/WebRTC",
+              "Kafka/Nats/RabbitMQ"
           ]
         },
         {
@@ -55,7 +60,9 @@ export default {
           skills: [
               "Microservice",
               "Monolithic",
-              "Unit testing"
+              "Restful API",
+              "Unit testing",
+              "Agile"
           ]
         }
       ]
