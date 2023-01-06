@@ -36,11 +36,8 @@ export default {
 <style scoped>
 .wrapper {
   width: 72%;
-
   margin: 80px auto 100px;
-
   padding-top: 20px;
-
   border-top: 1px solid #dadada;
 }
 
