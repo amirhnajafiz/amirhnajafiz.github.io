@@ -75,14 +75,11 @@ export default {
 .container {
   width: 100%;
   background-color: #f9ab55;
-
   padding: 50px;
   margin-bottom: 200px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
   color: #282828;
 }
 
@@ -93,11 +90,8 @@ export default {
 
 .header {
   font-size: 2rem;
-
   padding: 40px 60px;
-
   background-color: #f7f5fb;
-
   border-bottom: 1px solid #f7f5fb;
 }
 

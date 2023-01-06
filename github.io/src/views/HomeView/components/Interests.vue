@@ -43,10 +43,8 @@ export default {
 .wrapper {
   background-color: #084887;
   color: #f7f5fb;
-
   padding: 50px 100px;
   margin-bottom: 200px;
-
   display: grid;
   grid-template-columns: 20% 20% 20% 20%;
   row-gap: 50px;

@@ -35,44 +35,29 @@ export default {
 .nav {
   width: 100%;
   margin-bottom: 30px;
-
   background-color: #f7f5fb;
-
   height: 60px;
-
   padding: 20px 0;
-
   border-bottom: 1px solid #084887;
-
   position: sticky;
   top: 58px;
   z-index: 9999;
-
   overflow: hidden;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
   transition: 1s all;
-
   font-size: 14px;
 }
 
 .nav button {
   display: inline-block;
-
   outline: none;
   color: #084887;
-
   border: 0 solid #084887;
-
   background-color: inherit;
-
   text-decoration: none;
-
   transition: 0.5s color;
-
   cursor: pointer;
 }
 

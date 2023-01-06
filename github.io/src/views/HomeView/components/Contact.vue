@@ -56,9 +56,7 @@ export default {
 .text {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-
   background-color: #f9ab55;
   color: #f7f5fb;
   min-height: 200px;
@@ -66,7 +64,6 @@ export default {
 
 .image {
   background-color: #f7f5fb;
-
   margin: 0 auto;
   min-height: 200px;
   max-width: 100%;

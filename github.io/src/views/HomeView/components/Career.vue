@@ -50,12 +50,9 @@ export default {
 /* Timeline Container */
 .timeline {
   position: relative;
-
   background: #909cc2;
   color: #f7f5fb;
-
   margin: 80px auto 200px;
-
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -134,9 +131,7 @@ export default {
 /* Title of the card */
 .title {
   color: #f58a07;
-
   margin-bottom: 20px;
-
   position: relative;
 }
 
