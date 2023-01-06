@@ -93,16 +93,14 @@ export default {
   padding: 4px;
   border: 1px solid black;
   border-radius: 10px;
-
   transition: 0.5s all;
 }
 
 .wrapper {
+  height: 100%;
   padding: 10px 15px;
-
   border: 1px solid black;
   border-radius: 5px;
-
   transition: 0.5s all;
 }
 
@@ -118,7 +116,6 @@ export default {
 
 .row {
   font-size: 0.7em;
-
   display: flex;
   justify-content: space-between;
 }
@@ -132,16 +129,13 @@ export default {
 .circle {
   width: 16px;
   height: 16px;
-
   margin-left: 5px;
-
   border-radius: 50%;
 }
 
 .link {
   text-decoration-line: none;
   color: inherit;
-
   border-bottom: 0 solid black;
 }
 

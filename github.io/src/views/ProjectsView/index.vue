@@ -28,36 +28,36 @@ export default {
     return {
       projects: [
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "red"
+          title: "Stallion",
+          description: "Creating my own message broker.",
+          link: "https://github.com/official-stallion/stallion",
+          language: "Go",
+          color: "#ffffff",
+          background: "#f75f54"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "blue"
+          title: "Captain Mustache",
+          description: "Dockerizing Golang applications with mustache.",
+          link: "https://github.com/amirhnajafiz/mustache",
+          language: "Shell Script",
+          color: "#000",
+          background: "#a0f754"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "white",
-          background: "green"
+          title: "QSSE",
+          description: "Implementing SSE over QUIC protocol.",
+          link: "https://github.com/snapp-incubator/qsse",
+          language: "Go",
+          color: "#ffffff",
+          background: "#d8762e"
         },
         {
-          title: "title",
-          description: "des",
-          link: "link",
-          language: "image",
-          color: "black",
-          background: "gray"
+          title: "C Server-Client",
+          description: "Implementing a server client with C.",
+          link: "https://github.com/amirhnajafiz/c-server-client",
+          language: "C programming language",
+          color: "#ffffff",
+          background: "#c0c0c0"
         },
         {
           title: "title",
