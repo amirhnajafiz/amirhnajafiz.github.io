@@ -6,6 +6,10 @@ npm run build
 
 cd ..
 
+rm -rf assets
+
+mkdir assets
+
 mv github.io/dist ./
 
 mv dist/* .
