@@ -20,9 +20,9 @@ defineProps({
     <p style="margin-bottom: 20px;">
       {{ description }}
     </p>
-    <small class="little">
-      {{ link }}
-    </small>
+    <a :href="link" target="_blank" class="little">
+      Link
+    </a>
   </div>
 </template>
 
