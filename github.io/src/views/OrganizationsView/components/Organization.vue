@@ -43,6 +43,7 @@ export default {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 30% 70%;
+  column-gap: 10px;
   border-radius: 5px;
 }
 </style>

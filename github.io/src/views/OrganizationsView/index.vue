@@ -27,56 +27,38 @@ export default {
         {
           title: "Stallion",
           description: "Official Stallion message broker.",
-          address: "link",
-          image: "image"
+          address: "https://github.com/official-stallion",
+          image: "https://avatars.githubusercontent.com/u/113413625?s=200&v=4"
         },
         {
           title: "Daralfonoon",
           description: "CEIT / AUT Daralfonoon",
-          address: "link",
-          image: "image"
+          address: "https://github.com/aut-daralfonoon",
+          image: "https://avatars.githubusercontent.com/u/108024152?s=200&v=4"
         },
         {
           title: "ICPC",
           description: "Amirkabir ACM",
-          address: "link",
-          image: "image"
+          address: "https://github.com/aut-icpc",
+          image: "https://avatars.githubusercontent.com/u/50195977?s=200&v=4"
         },
         {
           title: "Linuxfest",
           description: "CEIT Linux festival",
-          address: "link",
-          image: "image"
+          address: "https://github.com/linuxfestival",
+          image: "https://avatars.githubusercontent.com/u/60551690?s=200&v=4"
         },
         {
           title: "CEIT-AUT",
           description: "My university projects.",
-          address: "link",
-          image: "image"
+          address: "https://github.com/ceit-aut",
+          image: "https://avatars.githubusercontent.com/u/110529164?s=200&v=4"
         },
         {
           title: "SNAPP Incubator",
           description: "Growing snapp-cab open source projects.",
           address: "https://github.com/snapp-incubator",
           image: "https://avatars.githubusercontent.com/u/89763510?s=200&v=4"
-        },
-        {
-          title: "org 1",
-          description: "des",
-          address: "link",
-          image: "image"
-        },
-        {
-          title: "org 1",
-          description: "des",
-          address: "link",
-          image: "image"
-        },
-        {
-          title: "org 1",
-          description: "des",
-          address: "link",
-          image: "image"
         }
       ]
     }
@@ -90,8 +72,8 @@ export default {
   grid-template-columns: auto auto auto;
   padding: 0 150px;
   column-gap: 20px;
-  row-gap: 80px;
-  margin: 80px 0;
+  row-gap: 120px;
+  margin: 120px 0;
 }
 
 .headline {
