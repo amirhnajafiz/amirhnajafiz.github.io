@@ -4,13 +4,13 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div>
-    <RouterLink class="navigation-item" to="/">
+    <RouterLink class="navigation-item" v-bind:class="{'navigation-item-select' : this.$route.name === 'home'}" to="/">
       Home
     </RouterLink>
-    <RouterLink class="navigation-item" to="/blog">
+    <RouterLink class="navigation-item" v-bind:class="{'navigation-item-select' : this.$route.name === 'blog'}" to="/blog">
       Blog
     </RouterLink>
-    <RouterLink class="navigation-item" to="/contact">
+    <RouterLink class="navigation-item" v-bind:class="{'navigation-item-select' : this.$route.name === 'contact'}" to="/contact">
       Contact
     </RouterLink>
   </div>
