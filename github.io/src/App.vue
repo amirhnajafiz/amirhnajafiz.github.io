@@ -8,7 +8,7 @@ import RoutesWithTransition from "./router/RoutesWithTransition.vue";
   <div>
     <Header class="navigation" />
     <RoutesWithTransition />
-    <Footer />
+    <Footer class="footer" />
   </div>
 </template>
 

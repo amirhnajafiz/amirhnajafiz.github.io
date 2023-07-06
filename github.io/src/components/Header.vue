@@ -15,13 +15,3 @@ import { RouterLink } from 'vue-router'
     </RouterLink>
   </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
-
-<style>
-
-</style>

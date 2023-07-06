@@ -1,4 +1,5 @@
 @import "./components/navigation.css";
+@import "./components/footer.css";
 
 * {
     box-sizing: border-box;
