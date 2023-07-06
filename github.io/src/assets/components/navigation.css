@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     padding: 30px 60px;
 
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(255, 215, 169);
 }
 
 .navigation-item {
@@ -19,7 +19,7 @@
     width: 0px;
     height: 1px;
     display: block;
-    background: black;
+    background: rgb(255, 215, 169);
     transition: 300ms;
 }
 
@@ -32,5 +32,5 @@
     width: 100%;
     height: 1px;
     display: block;
-    background: black;
+    background: rgb(255, 215, 169);
 }
