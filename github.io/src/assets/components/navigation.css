@@ -1,0 +1,15 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+
+    border-bottom: 1px solid black;
+}
+
+.navigation-item {
+    margin-right: 60px;
+    color: inherit;
+    text-decoration: none;
+}
