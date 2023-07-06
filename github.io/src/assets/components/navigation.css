@@ -13,3 +13,24 @@
     color: inherit;
     text-decoration: none;
 }
+
+.navigation-item::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: black;
+    transition: 300ms;
+}
+
+.navigation-item:hover::after {
+    width: 100%;
+}
+
+.navigation-item-select::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: black;
+}
