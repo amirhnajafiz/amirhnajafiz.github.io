@@ -5,3 +5,13 @@
     display: grid;
     grid-template-columns: 48% 45%;
 }
+
+.list-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+}
