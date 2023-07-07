@@ -15,3 +15,10 @@ In order to create a release for ```github``` pages run the following script.
 chmod +x build.sh
 ./build.sh
 ```
+
+## Docker
+
+```shell
+docker build . -f build/Dockerfile -t profile:v0.2.0
+docker run -it -d profile:v0.2.0
+```
