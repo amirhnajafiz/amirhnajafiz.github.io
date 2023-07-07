@@ -10,8 +10,5 @@ import { RouterLink } from 'vue-router'
     <RouterLink class="navigation-item" v-bind:class="{'navigation-item-select' : this.$route.name === 'blog'}" to="/blog">
       Blog
     </RouterLink>
-    <RouterLink class="navigation-item" v-bind:class="{'navigation-item-select' : this.$route.name === 'contact'}" to="/contact">
-      Contact
-    </RouterLink>
   </div>
 </template>
