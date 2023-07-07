@@ -18,7 +18,7 @@
         I am intrested in devops, infrastructure, network security, cloud computing, and software development.
       </p>
     </div>
-    <div style="text-align: center;">
+    <div class="top-margin-picture" style="text-align: center;">
       <img style="border-radius: 4px;" src="https://avatars.githubusercontent.com/u/58415967?v=4" alt="self picture" width="300" />
     </div>
   </div>
@@ -28,5 +28,20 @@
 .partition {
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+.top-margin-picture {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .partition {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .top-margin-picture {
+    margin-top: 60px;
+  }
 }
 </style>
