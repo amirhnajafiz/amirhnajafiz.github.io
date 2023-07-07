@@ -1,43 +1,44 @@
 <template>
   <div>
-    <div>
-      <ul>
-        <li>
+    <div style="padding-right: 30px; border-right: 1px solid white;">
+      <div style="text-align: justify;">
+        In order to reach me, you can use the following contact information. Make sure
+        to send me the correct contact information of yours.
+      </div>
+      <ul style="list-style-type: none; margin-top: 30px;">
+        <li style="margin-bottom: 10px;">
+          Phone Number: +989122112106
+        </li>
+        <li style="margin-bottom: 10px;">
+          Email Address: najafizadeh21@gmail.com
+        </li>
+        <li style="margin-bottom: 10px;">
+          Snapp! Email: amirhossein.najafizadeh@snapp.cab
+        </li>
+      </ul>
+    </div>
+    <div style="padding-left: 30px;">
+      <div style="text-align: justify;">
+        You can follow me in social media to get notifications about my works,
+        projects, papers, and blogs. Follow me on:
+      </div>
+      <ul style="list-style-type: none; margin-top: 30px;">
+        <li style="display: inline-block; margin-right: 30px;">
           Github
         </li>
-        <li>
+        <li style="display: inline-block; margin-right: 30px;">
           Medium
         </li>
-        <li>
+        <li style="display: inline-block; margin-right: 30px;">
           Linkedin
         </li>
-      </ul>
-    </div>
-    <div>
-      <ul>
-        <li>
-          Snapp!
+        <li style="display: inline-block; margin-right: 30px;">
+          StackOverflow
         </li>
-        <li>
-          Email
-        </li>
-        <li>
-          Phone
+        <li style="display: inline-block; margin-right: 30px;">
+          Research Gate
         </li>
       </ul>
-    </div>
-    <div>
-      All rights are reserved for amirhnajafiz!
     </div>
   </div>
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>

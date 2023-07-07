@@ -1,7 +1,7 @@
 .footer {
     background-color: #121212;
-    color: #f7f5fb;
+    color: #bcbcbc;
     padding: 30px 60px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 45%;
 }
