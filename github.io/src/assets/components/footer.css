@@ -6,6 +6,18 @@
     grid-template-columns: 48% 45%;
 }
 
+.footer-context {
+    padding-right: 30px;
+}
+
+.footer-context-left {
+    padding-left: 30px;
+}
+
+.left-footer {
+    border-right: 1px solid white;
+}
+
 .list-item {
     display: flex;
     align-items: center;
@@ -14,4 +26,21 @@
 .footer-link {
     color: inherit;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer-context, .footer-context-left {
+        padding: 30px;
+    }
+
+    .left-footer {
+        border-right: 0px solid white;
+    }
 }

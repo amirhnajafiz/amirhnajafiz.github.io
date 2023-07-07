@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="padding-right: 30px; border-right: 1px solid white;">
+    <div class="footer-context left-footer">
       <div style="text-align: justify;">
         In order to reach me, you can use the following contact information. Make sure
         to send me the correct contact information of yours.
@@ -34,7 +34,7 @@
         </li>
       </ul>
     </div>
-    <div style="padding-left: 30px;">
+    <div class="footer-context-left">
       <div style="text-align: justify;">
         You can follow me in social media to get notifications about my works,
         projects, papers, and blogs. Follow me on:
