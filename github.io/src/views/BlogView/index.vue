@@ -72,7 +72,7 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .blog-item {
@@ -80,5 +80,6 @@ export default {
   border: 2px solid rgb(255, 197, 131);
   border-radius: 4px;
   width: 30%;
+  box-shadow: 0 0 15px rgba(255, 197, 131, 0.5);
 }
 </style>
