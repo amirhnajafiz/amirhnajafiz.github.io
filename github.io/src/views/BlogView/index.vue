@@ -70,4 +70,15 @@ export default {
   width: 45%;
   box-shadow: 0 0 15px rgba(255, 197, 131, 0.5);
 }
+
+@media only screen and (max-width: 1000px) {
+  .blog-holder {
+    justify-content: center;
+  }
+
+  .blog-item {
+    width: 100%;
+    margin: 30px 0;
+  }
+}
 </style>
