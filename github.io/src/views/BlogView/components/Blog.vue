@@ -11,8 +11,8 @@ defineProps({
         <div class="title">
             {{ title }}
         </div>
-        <p style="text-align: justify;">
-            {{ description }}
+        <p style="text-align: justify; font-size: 0.8em;">
+            {{ description.slice(0, 120)+'...' }}
         </p>
         <div class="small">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
@@ -20,7 +20,7 @@ defineProps({
                 <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
             </svg>
             <span style="margin-left: 10px;">
-                visit blog at: <a v-bind:href="link">{{ link }}</a>
+                visit blog at: <a v-bind:href="link">{{ link.slice(0, 18) }}</a>
             </span>
         </div>
     </div>

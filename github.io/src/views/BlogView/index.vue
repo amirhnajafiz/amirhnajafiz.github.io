@@ -31,33 +31,21 @@ export default {
             blogs: [
                 {
                   id: 1,
-                  title: "test 1",
-                  context: "context 1",
-                  link: "http://address"
+                  title: "Kubernetes Cron-jobs (Python)",
+                  context: "A CronJob creates Jobs on a repeating schedule. CronJob is meant for performing regular scheduled actions such as backups, report…",
+                  link: "https://medium.com/@amirhossein-najafizadeh/kubernetes-cron-jobs-python-6167135d5d8f"
                 },
                 {
                   id: 2,
-                  title: "test 1",
-                  context: "context 1",
-                  link: "http://address"
+                  title: "Test-Containers in Golang (NATS)",
+                  context: "Test-containers in Go is a Go package that makes it simple to create and clean up container-based dependencies for automated…",
+                  link: "https://medium.com/@amirhossein-najafizadeh/test-containers-in-golang-nats-1e1c60e7823f"
                 },
                 {
                   id: 3,
-                  title: "test 1",
-                  context: "context 1",
-                  link: "http://address"
-                },
-                {
-                  id: 3,
-                  title: "test 1",
-                  context: "context 1",
-                  link: "http://address"
-                },
-                {
-                  id: 3,
-                  title: "test 1",
-                  context: "context 1",
-                  link: "http://address"
+                  title: "Traffic Shadowing of a Golang service with Gor",
+                  context: "In this project I’m going to give an example of how to use Gor in order to perform a HTTP Traffic Shadowing.",
+                  link: "https://medium.com/@amirhossein-najafizadeh/traffic-shadowing-golang-service-with-gor-90d99f6b8856"
                 }
             ]
         };
@@ -79,7 +67,7 @@ export default {
   padding: 20px 25px;
   border: 2px solid rgb(255, 197, 131);
   border-radius: 4px;
-  width: 30%;
+  width: 45%;
   box-shadow: 0 0 15px rgba(255, 197, 131, 0.5);
 }
 </style>
