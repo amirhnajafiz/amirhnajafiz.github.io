@@ -1,10 +1,26 @@
-{{ define "title" }}
-  {{- if eq .Kind "term" -}}
-    {{- i18n .Data.Plural 1 | title -}}
-    {{- print ": " -}}
-  {{- end -}}
-  {{- i18n (lower .Title) | default .Title | title }} · {{ .Site.Title -}}
-{{ end }}
-{{ define "content" }}
-  {{ partial "list.html" . }}
+{{ define "main" }}
+  <!-- Header -->
+  {{ partial "header" . }}
+
+  <div class="container">
+    <h4 class="my-5">Archive</h4>
+    <div class="panel">
+      <div class="panel-body">
+        {{ range .Data.Pages }}
+          <div class="row mb-2">
+            <div class="col-4">
+              <h5 style="text-align: right">
+                {{ .Date.Format "January 2, 2006" }}
+              </h5>
+            </div>
+            <div class="col-8">
+              <h5 style="text-align: left">
+                <b><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></b>
+              </h5>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
 {{ end }}

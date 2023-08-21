@@ -1,122 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ .Site.Params.Author }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}img/favicon.ico">
+    <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    {{ $style := resources.Get "css/main.css" | minify }}
+    <link rel="preload stylesheet" href="{{ $style.RelPermalink }}" as="style">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old">
+    {{ range .Site.Params.custom_css }}
+      <link rel="stylesheet" href="{{ $.Site.BaseURL}}{{ . }}">
+    {{ end }}
+    {{ `<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->` | safeHTML }}
 
-<head>
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  {{ partial "head.html" . }}
-</head>
-
-{{ $csClass := "colorscheme-light" }}
-{{ if eq .Site.Params.colorScheme "dark" }}
-{{ $csClass = "colorscheme-dark" }}
-{{ else if eq .Site.Params.colorScheme "auto" }}
-{{ $csClass = "colorscheme-auto" }}
-{{ end }}
-
-<body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-  {{ partial "float" . }}
-  <main class="wrapper">
-    {{ partial "header.html" . }}
-
-    <div class="content">
-      {{ block "content" . }}{{ end }}
+    {{- template "_internal/google_analytics_async.html" . }}
+  </head>
+  <body>
+    <div id="content">
+      {{- block "main" . }}{{- end }}
     </div>
-
-    {{ partial "footer.html" . }}
-  </main>
-
-  {{ if .HasShortcode "mermaid" }}
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"
-    integrity="sha256-QdTG1YTLLTwD3b95jLqFxpQX9uYuJMNAtVZgwKX4oYU=" crossorigin="anonymous"></script>
-  <script>
-    mermaid.initialize({ startOnLoad: true });
-  </script>
-  {{ end }}
-
-  {{ if .Site.IsServer }}
-  {{ $script := resources.Get "js/coder.js" }}
-  <script src="{{ $script.RelPermalink }}"></script>
-  {{ else }}
-  {{ $script := resources.Get "js/coder.js" | minify | fingerprint }}
-  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-  {{ end }}
-
-  {{ range .Site.Params.customJS }}
-  {{ if $.Site.IsServer }}
-  {{ $script := resources.Get . }}
-  <script src="{{ $script.RelPermalink }}"></script>
-  {{ else }}
-  {{ $script := resources.Get . | minify | fingerprint }}
-  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-  {{ end }}
-  {{ end }}
-
-  {{ range .Site.Params.customRemoteJS }}
-  {{ if $.Site.IsServer }}
-  {{ $script := resources.GetRemote . }}
-  <script src="{{ $script.RelPermalink }}"></script>
-  {{ else }}
-  {{ $script := resources.GetRemote . | minify | fingerprint }}
-  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
-  {{ end }}
-  {{ end }}
-
-
-  {{ template "_internal/google_analytics.html" . }}
-
-  {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
-  {{- partial "analytics/fathom" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
-  {{- partial "analytics/plausible" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
-  {{- partial "analytics/goatcounter" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
-  {{- partial "analytics/cloudflare" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.baidu .Site.Params.baidu.token }}
-  {{- partial "analytics/baidu" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.wideAngleAnalytics .Site.Params.wideAngleAnalytics.siteID }}
-  {{- partial "analytics/wideangle" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
-  {{- partial "analytics/matomo" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
-  {{- partial "analytics/googletagmanager" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.applicationInsights .Site.Params.applicationInsights.connectionString }}
-  {{- partial "analytics/applicationinsights" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.microAnalytics .Site.Params.microAnalytics.id }}
-  {{- partial "analytics/microanalyticsio" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.yandexMetrika .Site.Params.yandexMetrika.id }}
-  {{- partial "analytics/yandex-metrika" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.umami .Site.Params.umami.siteID }}
-  {{- partial "analytics/umami" . -}}
-  {{ end }}
-
-  {{ if and .Site.Params.pirsch .Site.Params.pirsch.code }}
-  {{- partial "analytics/pirsch" . -}}
-  {{ end }}
-
-  {{- partial "body/extensions" . -}}
-</body>
-
+    <!-- Footer -->
+    {{ partial "footer" . }}
+  </body>
 </html>

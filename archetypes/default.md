@@ -1,6 +1,8 @@
-+++ 
-draft = true
-date = {{ .Date }}
-title = ""
-slug = "" 
-+++
+---
+title: '{{ humanize .Name }}'
+description: ''
+date: {{ .Date }}
+draft: true
+categories: []
+tags: []
+---

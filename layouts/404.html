@@ -1,3 +1,8 @@
-{{ define "content" }}
-  {{ partial "404.html" . }}
+{{ define "main" }}
+  {{ partial "header" . }}
+  <div class="container">
+    <div class="page-not-found">
+      <h3>Uh oh! Page not found!</h3>
+    </div>
+  </div>
 {{ end }}

@@ -1,19 +1,12 @@
 <footer class="footer">
-  <section class="container">
-    ©
-    {{ if (and .Site.Params.since (lt .Site.Params.since now.Year)) }}
-      {{ .Site.Params.since }} -
-    {{ end }}
-    {{ now.Year }}
-    {{ with .Site.Params.author }} {{ . }} {{ end }}
-    ·
-    {{ if (and .Site.Params.license) }}
-      {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
-    ·
-    {{ end }}
-    {{ i18n "powered_by" }} <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    {{ if (and .Site.Params.commit .GitInfo) }}
-      [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>]
-    {{ end }}
-  </section>
+  <div class="container">
+    <div class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+    <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</div>
+  </div>
 </footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+{{- range .Site.Params.custom_js -}}
+  <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
