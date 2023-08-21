@@ -1,5 +1,8 @@
 # IDE
 .idea/
+resources/
+
+.hugo_build.lock
 
 # OS
 .DS_Store
