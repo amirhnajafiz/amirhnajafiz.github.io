@@ -40,6 +40,11 @@ googleAnalytics = ""
   weight = 200
   url = "/projects/"
 [[menu.main]]
+  name = "about"
+  identifier = "about"
+  weight = 50
+  url = "/about/"
+[[menu.main]]
   name = "resume"
   identifier = "resume"
   weight = 300
