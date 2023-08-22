@@ -2,11 +2,10 @@
 ---
 
 My name is **Amirhossein Najafizadeh**. I am a 22 years old
-computer engineer.
+computer engineer. I am a graduated computer engineer and science
+student.
 
 Have a look at some of my working [projects].
-
-For more check out my academic & professional [resume].
 
 [projects]: /projects
 [resume]: https://demo.nurlan.co/hugo-vitae/

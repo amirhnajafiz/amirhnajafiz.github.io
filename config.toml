@@ -30,7 +30,7 @@ googleAnalytics = ""
 
 ## Main Menu
 [[menu.main]]
-  name = "blog"
+  name = "research"
   weight = 100
   identifier = "blog"
   url = "/blog/"
@@ -40,12 +40,7 @@ googleAnalytics = ""
   weight = 200
   url = "/projects/"
 [[menu.main]]
-  name = "about"
+  name = "profile"
   identifier = "about"
   weight = 50
   url = "/about/"
-[[menu.main]]
-  name = "resume"
-  identifier = "resume"
-  weight = 300
-  url = "/resume/"
