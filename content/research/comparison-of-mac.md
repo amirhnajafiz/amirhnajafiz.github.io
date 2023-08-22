@@ -1,5 +1,5 @@
 +++
-author = "Amirhossein Najafizadeh, Dr.Babak Sadeghian"
+author = "Amirhossein Najafizadeh"
 title = "Comparison Of Scheduling Approaches In Mac Protocols"
 date = "2023-04-11"
 description = ""

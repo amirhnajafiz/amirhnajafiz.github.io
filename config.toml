@@ -44,3 +44,8 @@ googleAnalytics = ""
   identifier = "profile"
   weight = 50
   url = "/profile/"
+[[menu.main]]
+  name = "education"
+  identifier = "education"
+  weight = 70
+  url = "/education/"
