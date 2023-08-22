@@ -1,36 +1,21 @@
 name: Projects
 source:
-  - icon: fa fa-github
-    name: Project 1
-    description: Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel, ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
-    url: https://github.com/nurlansu/hugo-sustain
+  - icon: fa fa-medium
+    name: Minio shared objects operator
+    description: In this story I’m going to present an application called Minio URL Operator. I created this service in order to manage objects in Minio…
+    url: https://medium.com/@amirhossein-najafizadeh/minio-shared-objects-operator-d4a718f40a0
+
+  - icon: fa fa-medium
+    name: Kubernetes Cron-jobs (Python)
+    description: A CronJob creates Jobs on a repeating schedule. CronJob is meant for performing regular scheduled actions such as backups, report…
+    url: https://medium.com/@amirhossein-najafizadeh/kubernetes-cron-jobs-python-6167135d5d8f
+
+  - icon: fa fa-medium
+    name: Test-Containers in Golang (NATS)
+    description: Test-containers in Go is a Go package that makes it simple to create and clean up container-based dependencies for automated…
+    url: https://medium.com/@amirhossein-najafizadeh/test-containers-in-golang-nats-1e1c60e7823f
 
   - icon: fa fa-github
-    name: Project 2
-    description: An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire. Te his neglegentur consectetuer.
-    url: https://github.com/nurlansu/hugo-sustain
-
-  - icon: fa fa-github
-    name: Project 3
-    description: An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
-    url: https://github.com/nurlansu/hugo-sustain
-
-  - icon: fa fa-globe
-    name: Project 4
-    description: Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem, ea eam timeam viderer aliquid, cu integre omittam moderatius quo.
-    url: https://github.com/nurlansu/hugo-sustain
-
-  - icon: fa fa-globe
-    name: Project 5
-    description: Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo, eam doming blandit facilisis.
-    url: https://github.com/nurlansu/hugo-sustain
-
-  - icon: fa fa-cog
-    name: Project 6
-    description: Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem, usu ex sapientem gubergren. Tamquam admodum ei usu.
-    url: https://github.com/nurlansu/hugo-sustain
-
-  - icon: fa fa-cog
-    name: Project 7
-    description: Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum tractatos partiendo at, debet ubique oporteat ut his.
-    url: https://github.com/nurlansu/hugo-sustain
+    name: Traffic Shadowing of a Golang service with Gor
+    description: In this project I’m going to give an example of how to use Gor in order to perform a HTTP Traffic Shadowing.
+    url: https://medium.com/@amirhossein-najafizadeh/traffic-shadowing-golang-service-with-gor-90d99f6b8856
