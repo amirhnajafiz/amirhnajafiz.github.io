@@ -2,7 +2,7 @@
 author = "Amirhossein Najafizadeh, Dr.Seyed Ahmad Javadi"
 title = "Jump over go channels"
 date = "2023-08-21"
-description = "Guide to emoji usage in Hugo"
+description = "Jump over golang channels"
 tags = [
     "cloud computing",
     "qjump",
