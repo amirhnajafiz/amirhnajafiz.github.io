@@ -33,7 +33,7 @@ googleAnalytics = ""
   name = "research"
   weight = 100
   identifier = "blog"
-  url = "/blog/"
+  url = "/research/"
 [[menu.main]]
   name = "projects"
   identifier = "projects"
@@ -41,6 +41,6 @@ googleAnalytics = ""
   url = "/projects/"
 [[menu.main]]
   name = "profile"
-  identifier = "about"
+  identifier = "profile"
   weight = 50
-  url = "/about/"
+  url = "/profile/"
