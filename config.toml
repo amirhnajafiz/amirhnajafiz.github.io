@@ -12,21 +12,15 @@ googleAnalytics = ""
 [params]
   avatar = "https://avatars.githubusercontent.com/u/58415967?v=4"
   author = "Amirhossein Najafizadeh"
-  description = "Describe your website"
+  description = "My personal academic website."
 
   # Custom assets can be linked with their paths relative to static/
   custom_css = []
   custom_js  = []
 
 [params.social]
-  Github        = "username"
-  Email         = "email@example.com"
-  Twitter       = "username"
-  LinkedIn      = "username"
-  Stackoverflow = "username"
-  Medium        = "username"
-  Telegram      = "username"
-  RSS           = "/blog/index.xml"
+  Github        = "amirhnajafiz"
+  Email         = "najafizadeh21@gmail.com"
 
 ## Main Menu
 [[menu.main]]
@@ -40,7 +34,7 @@ googleAnalytics = ""
   weight = 200
   url = "/projects/"
 [[menu.main]]
-  name = "profile"
+  name = "biography"
   identifier = "profile"
   weight = 50
   url = "/profile/"

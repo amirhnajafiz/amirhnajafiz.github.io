@@ -1,12 +1,6 @@
 ---
 ---
 
-# Amirhossein Najafizadeh
+## Amirhossein Najafizadeh
 
-I am a 22 years old
-computer engineer. I am a graduated computer engineer and science
-student.
-
-Have a look at some of my working [projects].
-
-[projects]: /projects
+I'm 22 and almost done with my Computer Engineering degree at __Amirkabir University of Technology__. I focus on Computer Systems, digging into areas like Cloud Computing, Distributed Systems, Networks, and System Communications.

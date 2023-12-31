@@ -1,5 +1,5 @@
 +++
-author = "Amirhossein Najafizadeh, Dr.Seyed Ahmad Javadi"
+author = "Amirhossein Najafizadeh, Prof.Seyed Ahmad Javadi"
 title = "Jump over go channels"
 date = "2023-08-21"
 description = "Jump over golang channels"
