@@ -1,0 +1,71 @@
+<div class="pub-wrapper w-full inline-flex flex-wrap items-center
+            my-1.5 p-2.5 rounded bg-slate-200 dark:bg-slate-700 box-border
+            leading-tight justify-around" id="{{anchorize .title}}"
+     itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <div class="pub-image basis-40 grow-0 shrink" itemprop="image"
+
+         itemscope itemtype="http://schema.org/ImageObject">
+        <img alt="{{ .title }} paper illustration"
+             itemprop="url" src="{{ .image }}"
+             class="w-full"/>
+    </div>
+    <div class="publication grow shrink-2 basis-3/4 my-1.5 mx-2">
+        {{ range $author_index, $author_val := .authors }}
+        {{ if $author_val.me }}
+        <b>
+        {{ end }}
+            <span itemprop="author">{{- $author_val.name -}}</span>
+            {{- /* Add comma if not last author */ -}}
+            {{- if le $author_index (len .) -}},{{- end -}}
+        {{ if $author_val.me }}
+        </b>
+        {{ end }}
+        {{ end }}
+        <br>
+        <b>
+            <a href="{{ .pdf }}">
+                <span itemprop="name">{{ .title }}</span>
+            </a>
+        </b>
+        <meta itemprop="headline" content="{{ .title }}"/>
+        <br>
+        {{ if .journal }}
+        <div>
+        In <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+            <i itemprop="name">{{- .journal -}}</i></span>,
+        {{ end }}
+        <meta itemprop="datePublished" content="{{- .date -}}">{{- .date -}}.
+        </div>
+        {{- with .description -}}
+        <div itemprop="description" class="pub-description text-sm my-1.5">{{ . }}</div>
+        {{- end -}}
+        <div class="pub-link-wrapper mt-3 text-sm">
+            {{- if .citation -}}
+            <span class="publication-link cursor-pointer
+                         bg-sky-600 dark:bg-sky-700
+                         hover:bg-sky-800
+                         dark:hover:bg-sky-500
+                         text-white
+                         dark:text-zinc-200
+                         dark:hover:text-gray-800
+                         hover:text-gray-900
+                         rounded-sm p-1 mr-1">
+                <button class="open-modal text-inherit"
+                        data-target="#open-modal-{{- .title | urlize -}}">Cite</button></span>
+            {{- end -}}
+            {{- range .links -}}
+            <span class="publication-link bg-sky-600
+                         dark:bg-sky-700 rounded-sm p-1
+                         dark:hover:bg-sky-500
+                         hover:bg-sky-800 mr-1"><a class="border-none
+                         text-white
+                         dark:text-zinc-200
+                         hover:text-gray-900
+                          hover:dark:text-gray-800"
+                   itemprop="mainEntityOfPage" href="{{ .url }}">
+                    {{- .name -}}
+                </a></span>
+            {{- end -}}
+        </div>
+    </div>
+</div>

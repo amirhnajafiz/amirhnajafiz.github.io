@@ -1,0 +1,6 @@
+{{ define "main" }}
+    {{ .Content }}
+    {{ range .Pages }}
+        {{ partial "list-item.html" . }}
+    {{ end }}
+{{ end }}

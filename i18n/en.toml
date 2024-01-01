@@ -1,0 +1,14 @@
+[footerRSS]
+other = "Blog"
+
+[siteNotice]
+other = "Site notice"
+
+[categories]
+other = "Categories"
+
+[tags]
+other = "Tags"
+
+[errorMessage]
+other = "Page not found."

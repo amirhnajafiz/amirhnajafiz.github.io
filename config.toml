@@ -1,76 +1,89 @@
-baseURL = "https://raditian-hugo.radity.com/"
+# This is the configuration file for the example website of the Hugo theme
+# Astatine (see https://github.com/hugcis/hugo-astatine-theme).
+#
+# The URL from which the site will be served
+baseurl = "https://hugcis.github.io/hugo-astatine-theme/"
+# Language used
 languageCode = "en-us"
-theme = "adritian-free-hugo-theme"
+# Website title
+title = "Astatine Theme"
+# Theme used
+# theme = "hugo-astatine-theme"
 
-# Plugins
-[params.plugins]
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 10
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "css/main.css"
-  [[params.plugins.css]]
-  URL = "css/rad-icons.css"
-  [[params.plugins.css]]
-  URL = "css/custom.css"
+# Code highlighting
+pygmentsCodefences = true
+pygmentsStyle = "native"
 
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "js/rad-animations.js"
-  [[params.plugins.js]]
-  URL = "js/sticky-header.js"
-  [[params.plugins.js]]
-  URL = "js/library/fontfaceobserver.js"
+# Taxonomies (only tags and categories are supported out of the box but you can
+# add more)
+[taxonomies]
+    category = "categories"  
+    tag = "tags"
 
+# Configure permalinks style
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
 
-# navigation
-[menu]
+# Configure main navbar links. They can have a weight to select the order.
+# This links to content within the content/post/ folder
+[[menu.main]]
+    name = "Posts"
+    url = "/post/"
+    weight = -150
 
-  [[menu.header]]
-  name = "About"
-  URL = "#about"
-  weight = 2
+# This links to the page about.md
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = -110
 
-  [[menu.header]]
-  name = "Portfolio"
-  URL = "#portfolio"
-  weight = 3
+# Make the tags and categories pages accessible directly from the navbar.
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = -120
 
-  [[menu.header]]
-  name = "Contact"
-  URL = "#contact"
-  weight = 4
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = -130
 
-
-  [[menu.footer]]
-  name = "About"
-  URL = "#about"
-  weight = 2
-
-  [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
-  weight = 3
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "#contact"
-  weight = 4
-
-
+# Site wide params and SEO
 [params]
+    # Site description. Individual pages can have descriptions too but if
+    # missing it will fallback to that one.
+    description = """The homepage of Astatine. This website is a demo the of the \
+    Hugo theme Astatine."""
+    # Author of the site
+    authorName = "Jack Harkness"
+    # Main image for the author. This will be the default image for SEO.
+    [params.imgname]
+        name = "img/main.jpg"
+        # Add an alt description for the image
+        alt = "Profile picture"
 
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "testimonial", "contact", "newsletter"]
+    # Indicate if you host Katex yourself. Defaults to using the CDN KaTex.
+    # hostedKaTex = false
 
-  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
-  homepageExperienceCount = 6
-  
-  [params.logo]
-    text1 = "Andreas"
-    text2 = "Ellure"
+    # Optional: add a twitter handle and mastodon handle for SEO.
+    # [params.twitter]
+        # name = "@Jack_harkness"
+    # [params.mastodon]
+        # name = "@jkharkness"
+        # host = "mastodon.social"
+    
+    # Enable link to feed in footer
+    blogrss = true
 
-  [params.footer]
-      copyright = "© Raditian. All rights reserved."
-      [params.footer.radity_logo]
-        x = "img/general/design-and-code-radity.png"
-        _2x = "img/general/design-and-code-radity@2x.png"
-        alt = "Design & Code - Radity"
+    # Enable pingback and webmention via webmention.io
+    # webmention = "hugocisneros.com"
+
+
+# Sitemap location (default is /sitemap.xml)
+[sitemap]
+  filename = "sitemap.xml"

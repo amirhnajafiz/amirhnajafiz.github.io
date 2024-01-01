@@ -1,24 +1,29 @@
-<footer class="footer">
-  <div class="container">
-    <div class="footer__left">
-      <div class="footer__copy">
-        {{ .Site.Params.footer.copyright | safeHTML }}
-      </div>
-    </div>
-    <div class="footer__links">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-            <a class="nav-link" href="{{ .Site.BaseURL | absURL }}">🏠 HOME</a>
-        </li>
-        {{ range .Site.Menus.footer }}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .URL | relURL }}">{{ .Name | upper }}</a>
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-    <div class="footer__right">
-      
-    </div>
-  </div>
+<footer class="footer container h-10 text-center mt-1">
+<hr class="my-4">
+  <ul class="pl-0 mt-1">
+    {{ if isset .Site.Params "blogrss" }}
+    <li class="first:before:content-none before:content-['•'] inline-block list-none">
+      <a class="rss-link inline-block text-neutral-800 dark:text-neutral-400 border-none"
+          href="{{ .Site.BaseURL }}{{ "blog/index.xml" }}"
+          type="application/rss+xml"
+          target="_blank">
+        {{ i18n "footerRSS" }}
+        <img class="rss-icon w-4 inline-block"
+              src="{{ "img/RSS.svg" | absURL }}"
+              alt="RSS feed icon"/>
+      </a>
+    </li>
+    {{ end }}
+    <li class="ml-2 first:before:content-none before:content-['•']
+               inline-block list-none">
+      <a class="ml-2 text-neutral-800
+                dark:text-neutral-400 border-none"
+          href="https://github.com/hugcis/hugo-astatine-theme">Code</a>
+    </li>
+    <li class="ml-2 first:before:content-none before:content-['•']
+                text-neutral-800 dark:text-neutral-400 inline-block list-none">
+      <span class="ml-2">© {{ .Site.Params.authorName}} {{ now.Format "2006" }}</span>
+    </li>
+  </ul>
 </footer>
+{{ partial "extra_js.html" . }}

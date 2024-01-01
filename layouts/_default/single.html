@@ -1,0 +1,51 @@
+{{ define "main" }}
+<article class="article h-entry" itemprop="mainEntity" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="title-container">
+        <h1 class="article-title p-name" itemprop="name">{{ .Title }}</h1>
+        {{ if .Params.Headline }}
+        <b><i itemprop="headline" class="article-headline text-lg p-summary">
+            {{ .Params.Headline }}
+        </i></b>
+        {{ end }}
+        <div class="flex justify-between items-center">
+            {{ if not .Params.HideDate}}
+            <a class="text-lg text-gray-600 dark:text-gray-400 border-none u-url" href="{{ .Permalink }}">
+                <time itemprop="datePublished" class="dt-published"
+                    datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}"
+                    content="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">
+                    {{ .PublishDate.Format "2006.01.02" }}
+                </time>
+            </a>
+            {{ end }}
+            {{ if not .Params.HideAuthor }}
+                {{ if .Params.Author }}
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="{{ .Site.BaseURL }}" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Params.Author }}</span></a>
+                {{ else if .Site.Params.AuthorName }}
+                <a class="text-gray-600 dark:text-gray-400 text-right border-none p-author h-card" rel="author" href="{{ .Site.BaseURL }}" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Site.Params.AuthorName }}</span></a>
+                {{ end }}
+            {{ end }}
+        </div>
+        {{ if .Params.Readingtime }}
+        <div>
+            Reading time: {{ math.Round (div (countwords .Content) 220.0) }} minutes.
+        </div>
+        {{ end }}
+    </div>
+
+    <div class="article-content e-content" itemprop="articleBody">
+        {{ .Content }}
+    </div>
+
+    {{ partial "taxonomy.html" . }}
+    {{ partial "references.html" . }}
+    {{ if .Params.Lastmod }}
+    <div class="text-neutral-500 mb-4">
+        Last modified <span itemprop="dateModified"
+                            datetime="{{ .Lastmod.Format  "2006-01-02T15:04:05Z0700" }}"
+                            content="{{ .Lastmod.Format  "2006-01-02T15:04:05Z0700" }}">
+        {{ .Lastmod.Format "2006.01.02" }}
+        </span>
+    </div>
+    {{ end }}
+</article>
+{{ end }}
