@@ -2,11 +2,11 @@
 # Astatine (see https://github.com/hugcis/hugo-astatine-theme).
 #
 # The URL from which the site will be served
-baseurl = "https://hugcis.github.io/hugo-astatine-theme/"
+baseurl = "https://amirhnajafiz.github.io/"
 # Language used
 languageCode = "en-us"
 # Website title
-title = "Astatine Theme"
+title = "Amirhossein Najafizadeh"
 # Theme used
 # theme = "hugo-astatine-theme"
 
@@ -21,8 +21,6 @@ pygmentsStyle = "native"
 # Taxonomies (only tags and categories are supported out of the box but you can
 # add more)
 [taxonomies]
-    category = "categories"  
-    tag = "tags"
 
 # Configure permalinks style
 [permalinks]
@@ -42,30 +40,18 @@ pygmentsStyle = "native"
     url = "/about/"
     weight = -110
 
-# Make the tags and categories pages accessible directly from the navbar.
-[[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = -120
-
-[[menu.main]]
-    name = "Categories"
-    url = "/categories/"
-    weight = -130
-
 # Site wide params and SEO
 [params]
     # Site description. Individual pages can have descriptions too but if
     # missing it will fallback to that one.
-    description = """The homepage of Astatine. This website is a demo the of the \
-    Hugo theme Astatine."""
+    description = """My personal, academic, and educational website"""
     # Author of the site
-    authorName = "Jack Harkness"
+    authorName = "amirhnajfiz"
     # Main image for the author. This will be the default image for SEO.
     [params.imgname]
-        name = "img/main.jpg"
+        name = "https://avatars.githubusercontent.com/u/58415967?v=4"
         # Add an alt description for the image
-        alt = "Profile picture"
+        alt = "profile picture"
 
     # Indicate if you host Katex yourself. Defaults to using the CDN KaTex.
     # hostedKaTex = false
