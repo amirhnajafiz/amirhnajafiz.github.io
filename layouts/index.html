@@ -2,7 +2,7 @@
     {{ partial "info.html" . }}
     {{ .Content }}
     {{ with .Params.Publications }}
-        <h2 id="publications">Publications</h2>
+        <h2 id="publications">Articles</h2>
     {{ end }}
     {{ range .Params.Publications }}
         {{ partial "publication.html" . }}

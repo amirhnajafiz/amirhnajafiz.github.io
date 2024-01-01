@@ -1,10 +1,10 @@
 ---
 # === Required fields  ===
 # Your name 
-name: "Astatine"
+name: "Amirhossein Najafizadeh"
 # Your profile picture
 imgname: 
-  name: "img/main.jpg"
+  name: "https://avatars.githubusercontent.com/u/58415967?v=4"
   alt: "Picture of me"
   type: image/jpeg
 # More sources can be added (optional) using 
@@ -15,14 +15,13 @@ imgname:
 #     type: $IMAGE_TYPE
 # ...
 # A title (job title or "Researcher", "PhD student", etc.)
-personal_title: "Chemical element"
+personal_title: "Undergraduate Computer Engineering Student"
 # An address (you can list multiple)
 address: 
   - 
-    name: Everywhere
-    street: Nowhere
-    postal_code: "000000"
-    locality: Earth
+    name: Amirkabir University of Technology
+    street: Tehran
+    locality: Iran
 
 # === Optional fields ===
 # Add an email with a mailto: hyperlink
@@ -75,12 +74,5 @@ doi = {10.1038/ncomms2819}\n
     description: The radioactive element astatine exists only in trace amounts in nature. Its properties can therefore only be explored by study of the minute quantities of artificially produced isotopes or by performing theoretical calculations. One of the most important properties influencing the chemical behaviour is the energy required to remove one electron from the valence shell, referred to as the ionization potential.
 ---
 
-# Bio
-
-I am a chemical element with the symbol At and atomic number 85. I am 
-the rarest naturally occurring element in the Earth's crust, occurring only as
-the decay product of various heavier elements. All of my isotopes are
-short-lived; the most stable is astatine-210, with a half-life of 8.1 hours. 
-
-A pure sample of myself has never been assembled, because any macroscopic
-specimen would be immediately vaporized by the heat of its own radioactivity.
+I am 22 years old and look forward to graduating in February 2024 with a Bachelor of Science in Computer Engineering from Amirkabir University of Technology.
+For the past 4 years, my research has focused on Cloud computing and Distributed systems. So, for my Bachelor’s project, I worked on creating an automated system to perform penetration testing over a cloud environment. To continue my research, I attended an internship at Snapp (Iran Uber) company, which is also the biggest start-up in Iran, as a software and cloud engineer in their platform team. I maintained distributed infrastructure systems and built operators to automate operations on the platform. While working there, I learned soft skills like team collaboration, leadership, time management, and project management.
