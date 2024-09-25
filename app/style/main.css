@@ -1,6 +1,7 @@
 /* importing other css files */
 @import url("components.css");
 @import url("const.css");
+@import url("classes.css");
 
 /* global css settings */
 
