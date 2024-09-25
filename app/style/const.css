@@ -2,3 +2,13 @@
     display: grid;
     grid-template-columns: auto auto;
 }
+
+.mt-200 {
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+    .grid-2 {
+        grid-template-columns: auto;
+    }
+}
