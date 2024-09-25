@@ -16,7 +16,7 @@
             <p style="text-align: justify;">
                 Greeting, <br />
                 My name is Amirhossein Najafizadeh. I usually go by the name Amir.
-                I am a Ph.D. student in Computer Science at Stony Brook University (I believe in the Seawolves).
+                I am a Ph.D. student in Computer Science at Stony Brook University (<span id="animated-text">I believe in the Seawolves</span>).
                 I received my Bachelor's degree in Computer Engineering from Amirkabir University of Technology in 2022. <br />
                 I believe in hard work, and as I always say, a wise man once said, <span style="font-style: italic;">"Everything will be alright, just keep going,"</span>
                 and <span style="font-style: italic;">"It's never too late to do what you've dreamed about."</span>
@@ -34,5 +34,43 @@
         </div>
     </div>
     <script src="app/script/main.js"></script>
+    <script>
+        const textElement = document.getElementById('animated-text');
+        const originalText = textElement.innerText.split(''); // Split the text into characters
+        const believeRange = [0, 16];  // Characters "believe"
+        const seawolvesRange = [17, originalText.length];  // Characters "seawolves"
+
+        let believeIndex = believeRange[0];
+        let seawolvesIndex = seawolvesRange[0];
+
+        // A function to incrementally update the HTML content with colored characters
+        function updateTextContent() {
+        const updatedText = originalText.map((char, i) => {
+            if (i < believeIndex && i >= believeRange[0]) {
+            return `<span class="red">${char}</span>`;
+            } else if (i < seawolvesIndex && i >= seawolvesRange[0]) {
+            return `<span class="dark-blue">${char}</span>`;
+            } else {
+            return char; // Keep unchanged characters as is
+            }
+        }).join('');
+
+        textElement.innerHTML = updatedText;
+        }
+
+        function animateText() {
+        // Animate "believe" to red
+        if (believeIndex <= believeRange[1]) {
+            believeIndex++;
+            updateTextContent();
+        } else if (seawolvesIndex <= seawolvesRange[1]) {
+            // Animate "seawolves" to dark blue
+            seawolvesIndex++;
+            updateTextContent();
+        }
+        }
+
+        setInterval(animateText, 300);
+    </script>
 </body>
 </html>

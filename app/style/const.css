@@ -7,6 +7,14 @@
     margin-top: 200px;
 }
 
+.red {
+    color: rgb(175, 0, 0);
+}
+
+.dark-blue {
+    color: rgb(50, 50, 174);
+}
+
 @media only screen and (max-width: 900px) {
     .grid-2 {
         grid-template-columns: auto;
