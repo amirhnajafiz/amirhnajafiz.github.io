@@ -1,26 +1,26 @@
 .grid-2 {
-    display: grid;
-    grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .mt-100 {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .mt-200 {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .red {
-    color: rgb(175, 0, 0);
+  color: rgb(175, 0, 0);
 }
 
 .dark-blue {
-    color: rgb(50, 50, 174);
+  color: rgb(50, 50, 174);
 }
 
 @media only screen and (max-width: 900px) {
-    .grid-2 {
-        grid-template-columns: auto;
-    }
+  .grid-2 {
+    grid-template-columns: auto;
+  }
 }
