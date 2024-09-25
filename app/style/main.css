@@ -1,5 +1,6 @@
 /* importing other css files */
 @import url("components.css");
+@import url("const.css");
 
 /* global css settings */
 
@@ -7,4 +8,5 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
