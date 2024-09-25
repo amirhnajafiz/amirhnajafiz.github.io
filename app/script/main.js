@@ -4,12 +4,16 @@ function loadPage(page) {
     // Add a fade-out effect
     content.style.opacity = 0;
 
+    // Get the page route
+    const addr = page.split("/")[1].replace(".html", "");
+    localStorage.setItem("route", addr);
+
     setTimeout(() => {
         fetch(page)
             .then(response => response.text())
             .then(data => {
                 // Replace content and add a fade-in effect
-                console.log(data);
+                document.title = "amirhnajafiz - " + addr;
                 content.innerHTML = data;
                 content.style.opacity = 1;
             })
