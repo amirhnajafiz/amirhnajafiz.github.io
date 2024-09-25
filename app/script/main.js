@@ -1,3 +1,5 @@
+// Components scripts
+// Each section blongs to a page.html, which contains its needed scripts.
 function homeScript() {
     const textElement = document.getElementById('animated-text');
     const originalText = textElement.innerText.split(''); // Split the text into characters
@@ -37,6 +39,8 @@ function homeScript() {
     setInterval(animateText, 300);  // Adjust speed as needed
 }
 
+// main scripts
+// load page is used to redirect between routes
 function loadPage(page) {
     const content = document.getElementById('content');
 
