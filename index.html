@@ -15,12 +15,7 @@
     </div>
     <script src="app/script/main.js"></script>
     <script>
-        const route = localStorage.getItem("route");
-        if (route === null) {
-            loadPage("pages/home.html");
-        } else {
-            loadPage("pages/" + route +".html");
-        }
+        routeing();
     </script>
 </body>
 </html>

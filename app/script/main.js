@@ -60,8 +60,8 @@ function render(page) {
 
     // Get the page route
     const addr = page.split("/")[1].replace(".html", "");
-    localStorage.setItem("route", addr);
 
+    // Change the view
     setTimeout(() => {
         fetch(page)
             .then(response => response.text())
@@ -111,5 +111,5 @@ function routing() {
 // Event listeners
 // window url changes
 window.addEventListener("popstate", function (_) {
-    routing(path);
+    routing();
 })
