@@ -17,7 +17,7 @@
     top: -300px;
     width: 1300px;
     z-index: -2;
-    animation: move-mask 10s linear infinite;
+    animation: move-mask 7s linear infinite;
 }
 
 @keyframes move-mask {
