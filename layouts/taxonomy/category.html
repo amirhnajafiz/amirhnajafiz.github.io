@@ -1,8 +1,0 @@
-{{ define "main" }}
-  <div class="list">
-    <h2 class="list-title">{{ .Title }}</h2>
-    {{ range .Pages }}
-    {{ partial "list-item.html" . }}
-    {{ end }}
-  </div>
-{{ end }}
