@@ -104,13 +104,15 @@ function render(page) {
 // routing: handle routes by checking the location path.
 function routing() {
     // first we take the pathname out of the window location
-    let path = this.window.location.pathname;
+    let path = this.window.location.href.split("#")[1];
+    path.replace("/#", "");
+
     if (path == "" || path == "/") {
         path = "/home";
     }
 
     // default page is 404.html
-    let page = "/404";
+    let page = ROUTES["/404"];
 
     // then we check the input pathand compare it to our routes
     // entiries
@@ -126,3 +128,4 @@ function routing() {
 // Event listeners
 // Listen for popstate events (when navigating back/forward)
 window.addEventListener('popstate', routing);
+window.addEventListener('hashchange', routing);
