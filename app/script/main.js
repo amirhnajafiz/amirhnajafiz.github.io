@@ -10,6 +10,19 @@ const ROUTES = {
 
 // Components scripts
 // Each section blongs to a page.html, which contains its needed scripts.
+function allScript() {
+    const collection = document.getElementsByClassName("xnav-link");
+    const links = Array.from(collection);
+
+    links.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            history.replaceState(null, '', link.getAttribute('href'));
+            routing();
+        });
+    });
+}
+
 function homeScript() {
     const textElement = document.getElementById('animated-text');
     const originalText = textElement.innerText.split(''); // Split the text into characters
@@ -74,6 +87,8 @@ function render(page) {
                 return addr;
             })
             .then(handler => {
+                allScript();
+
                 if (handler == "home") {
                     homeScript();
                 }
@@ -109,7 +124,5 @@ function routing() {
 }
 
 // Event listeners
-// window url changes
-window.addEventListener("popstate", function (_) {
-    routing();
-})
+// Listen for popstate events (when navigating back/forward)
+window.addEventListener('popstate', routing);
