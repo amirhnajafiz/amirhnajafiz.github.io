@@ -6,6 +6,7 @@
   text-decoration: none !important;
   outline: none;
   font-size: 0.9rem;
+  box-shadow: 0 0 2px black;
 }
 
 .list-inline-item a:hover {
@@ -16,7 +17,7 @@
 .list-group-item {
   border: 0 solid black !important;
   padding: 0 !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 10px !important;
 }
 
 @media only screen and (max-width: 1200px) {
