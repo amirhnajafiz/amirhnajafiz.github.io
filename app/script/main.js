@@ -108,11 +108,17 @@ function render(page) {
 // routing: handle routes by checking the location path.
 function routing() {
   // first we take the pathname out of the window location
-  let path = this.window.location.href.split("#")[1];
-  path.replace("/#", "");
+  let path = this.window.location.href.split("#");
+  if (path.length == 1) {
+    path = "";
+  } else {
+    path = path[path.length-1];
+  }
 
   if (path == "" || path == "/") {
     path = "/home";
+  } else {
+    path.replace("/#", "");
   }
 
   // default page is 404.html
