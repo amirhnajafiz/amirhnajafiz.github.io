@@ -6,18 +6,29 @@
 }
 
 #bg_img {
-    opacity: 0.2;
+    opacity: 0.1;
     position: fixed;
-    left: -400px;
+    left: -900px;
     top: -300px;
-    width: 80%;
-    z-index: -1;
+    width: 1300px;
+    z-index: -2;
+    animation: move-mask 10s linear infinite;
+}
+
+@keyframes move-mask {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.1;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-    #bg_img {
-        left: -50px;
-        top: -50px;
-        width: 100%;
+    #profile_img {
+        margin-bottom: 30px;
     }
 }

@@ -1,10 +1,11 @@
 .list-inline-item a {
     background-color: #001f3f; /* Dark blue */
     color: white;
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 25px;
     text-decoration: none !important;
     outline: none;
+    font-size: 0.9rem;
 }
 
 .list-inline-item a:hover {
@@ -15,7 +16,6 @@
 @media only screen and (max-width: 1200px) {
     .list-inline-item {
         display: inline-block;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 }
