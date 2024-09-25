@@ -93,6 +93,8 @@ function render(page) {
 
         if (handler == "home") {
           homeScript();
+        } else if (handler == "books") {
+          renderBooks();
         }
       })
       .catch((error) => {

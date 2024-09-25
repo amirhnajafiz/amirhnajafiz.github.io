@@ -19,6 +19,10 @@
   color: rgb(50, 50, 174);
 }
 
+.small-text {
+  font-size: 0.98rem !important;
+}
+
 @media only screen and (max-width: 900px) {
   .grid-2 {
     grid-template-columns: auto;
