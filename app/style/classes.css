@@ -13,6 +13,12 @@
     color: #ffffff;
 }
 
+.list-group-item {
+    border: 0 solid black !important;
+    padding: 0 !important;
+    padding-bottom: 20px !important;
+}
+
 @media only screen and (max-width: 1200px) {
     .list-inline-item {
         display: inline-block;
