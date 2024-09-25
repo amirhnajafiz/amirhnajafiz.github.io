@@ -20,6 +20,13 @@
     animation: move-mask 7s linear infinite;
 }
 
+#date_wrapper {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    z-index: 90;
+}
+
 @keyframes move-mask {
     0% {
         opacity: 0.1;
