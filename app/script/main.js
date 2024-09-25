@@ -1,3 +1,13 @@
+// global variables
+// routes is a map that binds the address to a page in pages directory.
+const ROUTES = {
+    "/home": "pages/home.html",
+    "/blogs": "pages/blogs.html",
+    "/books": "pages/books.html",
+    "/contact": "pages/contact.html",
+    "/404": "pages/404.html"
+};
+
 // Components scripts
 // Each section blongs to a page.html, which contains its needed scripts.
 function homeScript() {
@@ -39,9 +49,10 @@ function homeScript() {
     setInterval(animateText, 300);  // Adjust speed as needed
 }
 
-// main scripts
-// load page is used to redirect between routes
-function loadPage(page) {
+// global used functions
+// render: this function is used to render a page based on its input
+function render(page) {
+    // Get content element
     const content = document.getElementById('content');
 
     // Add a fade-out effect
@@ -74,3 +85,31 @@ function loadPage(page) {
             });
     }, 300); // Adjust the delay for smoother transitions
 }
+
+// routing: handle routes by checking the location path.
+function routing() {
+    // first we take the pathname out of the window location
+    let path = this.window.location.pathname;
+    if (path == "" || path == "/") {
+        path = "/home";
+    }
+
+    // default page is 404.html
+    let page = "/404";
+
+    // then we check the input pathand compare it to our routes
+    // entiries
+    for (const [key, value] of Object.entries(ROUTES)) {
+        if (key == path) {
+            page = value;
+        }
+    }
+
+    render(page);
+}
+
+// Event listeners
+// window url changes
+window.addEventListener("popstate", function (_) {
+    routing(path);
+})
