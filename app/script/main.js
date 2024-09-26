@@ -95,6 +95,8 @@ function render(page) {
           homeScript();
         } else if (handler == "books") {
           renderBooks();
+        } else if (handler == "blogs") {
+          renderBlogs();
         }
       })
       .catch((error) => {
