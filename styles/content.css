@@ -51,3 +51,7 @@
 .text-justify {
     text-align: justify;
 }
+
+.list-group-item {
+    font-size: 0.8rem;
+}
