@@ -2,3 +2,16 @@
 @import url("global.css");
 @import url("header.css");
 @import url("content.css");
+
+.bg-mycolor {
+    background-color: #7696ffb0;
+}
+
+.small-text {
+    font-size: 0.7rem;
+}
+
+.white-text {
+    color: white;
+    text-decoration: none;
+}
