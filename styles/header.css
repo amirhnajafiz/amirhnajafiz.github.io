@@ -1,0 +1,23 @@
+/* header styles */
+.navbar {
+    background-color: #7696ffb0;
+    position: fixed !important;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #000 !important;
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}

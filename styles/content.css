@@ -1,0 +1,53 @@
+/* content styles (classes, ids) */
+.bg {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px; 
+    width: 100%;
+}
+
+.bg-container {
+    margin: 0px auto;
+    padding-top: 200px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.self-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    width: 220px;
+    height: 220px;
+}
+
+.self-img {
+    border: 2px solid #666;
+    width: 200px;
+    height: 200px;
+}
+
+.self-text {
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.self-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.self-text a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.text-justify {
+    text-align: justify;
+}
