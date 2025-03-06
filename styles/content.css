@@ -60,8 +60,6 @@
 .blog-post {
     font-size: 0.9rem;
     padding: 0 10px 0;
-    text-align: justify;
-    margin-bottom: -10px;
 }
 
 .blog-post a {
@@ -84,12 +82,12 @@
 
 .blog-post {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: start;
 }
 
 .blog-post::before {
     content: "• ";
     color: #565656;
-    font-size: 1.7rem;
     margin-right: 5px;
 }
