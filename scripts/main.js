@@ -19,7 +19,7 @@ $(document).ready(function() {
     click: function() {
       $('html, body').animate({ scrollTop: 0 }, 'slow');
     }
-  }).appendTo('body').addClass('btn btn-primary fixed-bottom fixed-right');
+  }).appendTo('body').addClass('btn bg-mycolor fixed-bottom fixed-right');
 
   $('#scrollToTop').html('<i class="fas fa-arrow-up"></i>');
   $('#scrollToTop').addClass('btn-sm');

@@ -4,7 +4,7 @@
 @import url("content.css");
 
 .bg-mycolor {
-    background-color: #7696ffb0;
+    background-color: #7696ffb0 !important;
 }
 
 .small-text {

@@ -3,12 +3,13 @@
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     height: 600px; 
     width: 100%;
 }
 
 .bg-container {
-    margin: 0px auto;
+    margin: 0px auto !important;
     padding-top: 200px;
 }
 
@@ -32,6 +33,7 @@
     color: #fff;
     text-align: right;
     font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .self-text a {
@@ -50,4 +52,41 @@
 
 .list-group-item {
     font-size: 0.8rem;
+}
+
+.blog-post {
+    font-size: 0.9rem;
+    padding: 0 10px 0;
+    text-align: justify;
+    margin-bottom: -10px;
+}
+
+.blog-post a {
+    color: #565656;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.blog-post:nth-of-type(odd)::before {
+    color: red;
+}
+
+.blog-post:nth-of-type(even)::before {
+    color: blue;
+}
+
+.blog-post {
+    display: flex;
+    align-items: center;
+}
+
+.blog-post::before {
+    content: "• ";
+    color: #565656;
+    font-size: 1.7rem;
+    margin-right: 5px;
 }
