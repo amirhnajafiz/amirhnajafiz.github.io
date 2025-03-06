@@ -10,10 +10,6 @@
 .bg-container {
     margin: 0px auto;
     padding-top: 200px;
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .self-container {
