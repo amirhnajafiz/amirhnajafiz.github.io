@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.8);
     background-color: #fff;
     width: 220px;
     height: 220px;
@@ -27,13 +27,16 @@
     border: 2px solid #666;
     width: 200px;
     height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: rotate(-2deg);
 }
 
 .self-text {
     color: #fff;
     text-align: right;
     font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .self-text a {
