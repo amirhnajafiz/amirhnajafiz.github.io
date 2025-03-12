@@ -19,7 +19,7 @@ function createLiftButton() {
     click: function() {
       $('html, body').animate({ scrollTop: 0 }, 'slow');
     }
-  }).appendTo('body').addClass('btn bg-mycolor fixed-bottom fixed-right');
+  }).appendTo('body').addClass('btn bg-mycolor fixed-bottom fixed-right shadow');
 
   $('#scrollToTop').html('<i class="fas fa-arrow-up"></i>');
   $('#scrollToTop').addClass('btn-sm');
