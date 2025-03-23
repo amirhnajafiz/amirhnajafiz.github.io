@@ -8,6 +8,10 @@ var posts = {
   ],
   "blogs": [
     {
+      "content": "IPFS: Manage data without a central server",
+      "url": "https://amirhossein-najafizadeh.medium.com/ipfs-manage-data-without-a-central-server-b32334f94a39"
+    },
+    {
       "content": "Having your Kubernetes over NFS",
       "url": "https://medium.com/@amirhossein-najafizadeh/having-your-kubernetes-over-nfs-0510d5ed9b0b"
     },
