@@ -1,0 +1,16 @@
+{
+  "siteTitle": "Amir Zadeh",
+  "logo": "/images/logo.png",
+  "background": "/images/background.jpg",
+  "copyright": "© 2021 Amir Zadeh",
+  "nav": [
+    { "label": "About", "href": "#about" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Papers", "href": "#papers" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Students", "href": "#students" },
+    { "label": "Blog", "href": "#blog" }
+  ]
+}

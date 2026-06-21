@@ -1,3 +1,7 @@
+# Dependencies & build output
+node_modules/
+dist/
+
 # IDE
 .idea/
 resources/

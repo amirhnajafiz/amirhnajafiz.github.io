@@ -1,0 +1,16 @@
+[
+  {
+    "role": "Research Assistant",
+    "company": "File Systems and Storage Lab (FSL), Stony Brook University",
+    "period": "2024 - Present",
+    "type": "Full-time",
+    "description": "Designing distributed, secure, and reliable clusters for running machine learning applications. Setting up runtime platforms such as OpenShift and Kubernetes on top of CephFS, NFS, and other distributed file systems."
+  },
+  {
+    "role": "Cloud Engineer",
+    "company": "Snapp",
+    "period": "2021 - 2024",
+    "type": "Full-time",
+    "description": "Developed VoIP and CEMQ services and managed OpenShift clusters as a full-time Cloud Engineer. Responsibilities spanned cluster orchestration, operator management, monitoring, and application delivery services."
+  }
+]

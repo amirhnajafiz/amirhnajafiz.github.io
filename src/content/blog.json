@@ -1,0 +1,32 @@
+[
+  {
+    "title": "IPFS: Manage data without a central server",
+    "date": "Mar 2025",
+    "url": "https://amirhossein-najafizadeh.medium.com/ipfs-manage-data-without-a-central-server-b32334f94a39"
+  },
+  {
+    "title": "Having your Kubernetes over NFS",
+    "date": "Mar 2025",
+    "url": "https://medium.com/@amirhossein-najafizadeh/having-your-kubernetes-over-nfs-0510d5ed9b0b"
+  },
+  {
+    "title": "EMQX v5: Under Magnifier",
+    "date": "Sep 2024",
+    "url": "https://medium.com/@amirhossein-najafizadeh/emqx-v5-under-magnifier-ad4f6e0b8932"
+  },
+  {
+    "title": "Benchmarking NATS JetStream Cluster: Hypothesis Testing for Enhancements",
+    "date": "Jun 2024",
+    "url": "https://medium.com/@amirhossein-najafizadeh/benchmarking-nats-jetstream-cluster-hypothesis-testing-for-enhancements-4a500d11ce7b"
+  },
+  {
+    "title": "Minio shared objects operator",
+    "date": "Aug 2023",
+    "url": "https://medium.com/@amirhossein-najafizadeh/minio-shared-objects-operator-d4a718f40a0"
+  },
+  {
+    "title": "Kubernetes Cron-jobs (Python)",
+    "date": "May 2023",
+    "url": "https://medium.com/@amirhossein-najafizadeh/kubernetes-cron-jobs-python-6167135d5d8f"
+  }
+]

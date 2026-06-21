@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Languages",
+    "items": ["Go", "Rust", "Python", "C", "JavaScript", "Bash"]
+  },
+  {
+    "category": "Infrastructure Management",
+    "items": ["Ansible", "Terraform", "CUE", "Helm", "eBPF"]
+  },
+  {
+    "category": "Cloud & Orchestration",
+    "items": ["Kubernetes", "OpenShift", "AWS:EKS", "AWS:ECR", "AWS:EC2", "AWS:VPC", "Docker", "Containerd"]
+  },
+  {
+    "category": "Storage & File Systems",
+    "items": ["S3", "CephFS", "NFS", "MinIO", "IPFS", "MongoDB", "MySQL", "PostgresQL", "Redis", "LMCache", "GPFS"]
+  },
+  {
+    "category": "Distributed Systems",
+    "items": ["vLLM", "NATS", "EMQX", "Kafka", "Spark", "Hadoop", "Proxmox VE"]
+  },
+  {
+    "category": "Observability & Tooling",
+    "items": ["Cilium", "Prometheus", "Grafana", "OpenObserve", "Loki", "Elasticsearch", "ArgoCD", "LTTng"]
+  }
+]

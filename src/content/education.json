@@ -1,0 +1,14 @@
+[
+  {
+    "degree": "PhD in Computer Science",
+    "institution": "Stony Brook University",
+    "period": "2024 - Present",
+    "description": "I received a one year full scholarship from Stony Brook University to pursue my PhD in Computer Science. I am a member of the File Systems and Storage Lab (FSL) and I am advised by Prof. Erez Zadok. I am currently a full-time research assistant working on distributed systems and storage solutions. My work involves developing and optimizing algorithms for data management and retrieval in large-scale distributed environments."
+  },
+  {
+    "degree": "Bachelors in Computer Engineering",
+    "institution": "Amirkabir University of Technology",
+    "period": "2019 - 2023",
+    "description": "I received my Bachelors in Computer Engineering from Amirkabir University of Technology in 2023. I was a member of the Data Security Lab (DSL) and I was advised by Prof. Babak Sadeghian. My bachelor's thesis was on designing a dynamic distributed file system for automated penetration testing. I also worked with Prof. Ahmad Javadi as a research project assistant on the QJUMP over Network Interface project."
+  }
+]

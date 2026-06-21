@@ -1,0 +1,43 @@
+/* Design tokens — the single source of truth for the warm blue/purple/orange
+   theme. Change a value here and it propagates across the whole site. */
+:root {
+  /* Brand — warm blue → purple → orange */
+  --blue: #4f6ef7;
+  --blue-deep: #3a4fd6;
+  --purple: #8b5cf6;
+  --purple-deep: #6d3ff0;
+  --orange: #ff8c42;
+  --orange-deep: #f5731f;
+
+  /* Surfaces & ink (warm neutrals) */
+  --bg: #faf7f3;
+  --bg-tint: #f3eee7;
+  --surface: #ffffff;
+  --ink: #1f1a2e;
+  --muted: #6b6577;
+  --border: #ece6df;
+
+  /* Composed */
+  --gradient-brand: linear-gradient(120deg, var(--blue), var(--purple) 55%, var(--orange));
+  --gradient-brand-soft: linear-gradient(
+    120deg,
+    rgba(79, 110, 247, 0.12),
+    rgba(139, 92, 246, 0.12) 55%,
+    rgba(255, 140, 66, 0.12)
+  );
+
+  /* Shadows — soft, slightly purple-tinted */
+  --shadow-sm: 0 1px 2px rgba(31, 26, 46, 0.06);
+  --shadow-md: 0 10px 30px -12px rgba(109, 63, 240, 0.25);
+  --shadow-lg: 0 24px 60px -20px rgba(109, 63, 240, 0.35);
+
+  /* Layout */
+  --max-width: 1080px;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --nav-height: 64px;
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}

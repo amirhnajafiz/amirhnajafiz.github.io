@@ -1,0 +1,12 @@
+{
+  "name": "Amirhossein Najafizadeh",
+  "shortName": "Amir Zadeh",
+  "photo": "/images/self.jpeg",
+  "tagline": "Operating Systems · File systems & Storage · Cloud Computing · Systems Security · Distributed Systems",
+  "details": [
+    { "label": "Role", "value": "Research Assistant @ File System and Storage Lab", "icon": "role" },
+    { "label": "Location", "value": "Stony Brook, New York, USA", "icon": "location" },
+    { "label": "Office", "value": "New Computer Science Building, Room 306", "icon": "office" }
+  ],
+  "email": "anajafizadeh@cs.stonybrook.edu"
+}
