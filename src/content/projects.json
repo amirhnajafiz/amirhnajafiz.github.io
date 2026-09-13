@@ -1,10 +1,18 @@
 [
   {
-    "content": "Penetration Testing as a Service — automated penetration testing over cloud.",
-    "url": "https://github.com/ptaas-tool"
+    "content": "KVC TierSim — Heterogeneous KV-cache tier simulator for LLM inference",
+    "url": "https://github.com/sbu-fsl/KVC-TierSim"
   },
   {
-    "content": "Stallion — fast message broker implemented with Golang.",
-    "url": "https://github.com/official-stallion/stallion"
+    "content": "MQTT Blackbox Exporter — Connect, Subscribe and Publish over MQTT broker to check its status.",
+    "url": "https://github.com/snapp-incubator/mqtt-blackbox-exporter"
+  },
+  {
+    "content": "LocalSight — Kubernetes-native observability for pod-local filesystem, log, memory, and ephemeral storage usage.",
+    "url": "https://github.com/amirhnajafiz/localsight"
+  },
+  {
+    "content": "MayIGoo — A small service-account authorization service written in Go",
+    "url": "https://github.com/amirhnajafiz/mayigoo"
   }
 ]

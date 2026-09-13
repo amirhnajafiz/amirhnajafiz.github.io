@@ -1,5 +1,11 @@
 [
   {
+    "title": "LLM KV-cache: To Restore or To Recompute, That Is the Question",
+    "year": "2026",
+    "url": "https://doi.org/10.1145/3837053.3837336",
+    "bibtex": "None"
+  },
+  {
     "title": "Stateless Network-Aware Adaptive Bitrate Streaming over IPFS",
     "year": "2025",
     "url": "https://arxiv.org/abs/2606.29574",

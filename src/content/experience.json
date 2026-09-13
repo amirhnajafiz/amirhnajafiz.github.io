@@ -7,6 +7,13 @@
     "description": "Designing distributed, secure, and reliable clusters for running machine learning applications. Setting up runtime platforms such as OpenShift and Kubernetes on top of CephFS, NFS, and other distributed file systems."
   },
   {
+    "role": "R&D Engineer",
+    "company": "Tika Security",
+    "period": "2026 - 2026",
+    "type": "Internship",
+    "description": "As a R&D engineer, my role was to investigate state-of-the-art sandboxing techniques for AI agentic workloads to provide secure data sharing and file access between agents. "
+  },
+  {
     "role": "Cloud Engineer",
     "company": "Snapp",
     "period": "2021 - 2024",
