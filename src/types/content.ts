@@ -57,6 +57,7 @@ export interface Student {
 /** A publication — title, year, a link to the original cite, and its BibTeX. */
 export interface Paper {
   title: string;
+  where: string;
   year: string;
   url: string;
   bibtex: string;
