@@ -1,18 +1,21 @@
 [
   {
     "title": "LLM KV-cache: To Restore or To Recompute, That Is the Question",
+    "where": "18th ACM HotStorage",
     "year": "2026",
     "url": "https://doi.org/10.1145/3837053.3837336",
     "bibtex": "@inproceedings{najafizadeh2026llm, title={LLM KV-cache: To Restore or To Recompute, That Is the Question}, author={Najafizadeh, Amirhossein and Tarasov, Vasily and Merenstein, Alex and Zhu, Yue and Zadok, Erez}, booktitle={Proceedings of the 18th ACM Workshop on Hot Topics in Storage and File Systems}, pages={8--15}, year={2026} }"
   },
   {
     "title": "Stateless Network-Aware Adaptive Bitrate Streaming over IPFS",
+    "where": "arXiv",
     "year": "2025",
     "url": "https://arxiv.org/abs/2606.29574",
     "bibtex": "@article{mirzaei2026stateless, title={Stateless Network-Aware Adaptive Bitrate Streaming over IPFS}, author={Mirzaei, Iliya and Mojaveri, Shabnam Jafarzade and Najafizadeh, Amirhossein}, journal={arXiv preprint arXiv:2606.29574}, year={2026}}"
   },
   {
     "title": "Jump over Golang channels",
+    "where": "ResearchGate",
     "year": "2022",
     "url": "https://www.researchgate.net/publication/373271512_Jump_over_Golang_channels",
     "bibtex": "@article{najafizadehjump, title={Jump over Golang channels}, author={Najafizadeh, Amirhossein}}"

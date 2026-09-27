@@ -27,7 +27,7 @@ function PaperItem({ paper, index }: { paper: Paper; index: number }) {
       transition={{ duration: 0.45, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
     >
       <span className="paper-year">{paper.year}</span>
-      <span className="paper-title">{paper.title}</span>
+      <span className="paper-title">{paper.title} <i><small>({paper.where})</small></i></span>
       <div className="paper-actions">
         <a
           className="paper-action"
