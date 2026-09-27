@@ -1,23 +1,23 @@
-# AMIRHNAJAFIZ.GITHUB.IO
+# amirhnajafiz.github.io
 
-My personal website — a single-page portfolio built with **React + Vite + TypeScript**
-and **Framer Motion** animations, in a warm blue / purple / orange theme.
+My personal website, a single-page portfolio built with **React + Vite + TypeScript**
+and **Framer Motion** animations.
 
-## Editing content
+## Content
 
-All personal data lives as JSON under [`src/content/`](src/content/) — no need to touch
+All personal data lives as JSON under [`src/content/`](src/content/), no need to touch
 component code to update the site:
 
-| File | What it controls |
-| --- | --- |
-| `profile.json` | Name, tagline, photo, hero details, email |
-| `about.json` | About-me paragraphs |
-| `education.json` | Education cards |
-| `papers.json` | Publications list |
-| `projects.json` | Projects list |
-| `blog.json` | Blog post links |
-| `social.json` | Footer social links |
-| `site.json` | Title, logo, nav items, copyright, hero background |
+| File             | What it controls                                   |
+| ---------------- | -------------------------------------------------- |
+| `profile.json`   | Name, tagline, photo, hero details, email          |
+| `about.json`     | About-me paragraphs                                |
+| `education.json` | Education cards                                    |
+| `papers.json`    | Publications list                                  |
+| `projects.json`  | Projects list                                      |
+| `blog.json`      | Blog post links                                    |
+| `social.json`    | Footer social links                                |
+| `site.json`      | Title, logo, nav items, copyright, hero background |
 
 The shapes are typed in [`src/types/content.ts`](src/types/content.ts), so the build
 catches mistakes. Images live in [`public/images/`](public/images/).
