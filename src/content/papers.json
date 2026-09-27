@@ -3,7 +3,7 @@
     "title": "LLM KV-cache: To Restore or To Recompute, That Is the Question",
     "year": "2026",
     "url": "https://doi.org/10.1145/3837053.3837336",
-    "bibtex": "None"
+    "bibtex": "@inproceedings{najafizadeh2026llm, title={LLM KV-cache: To Restore or To Recompute, That Is the Question}, author={Najafizadeh, Amirhossein and Tarasov, Vasily and Merenstein, Alex and Zhu, Yue and Zadok, Erez}, booktitle={Proceedings of the 18th ACM Workshop on Hot Topics in Storage and File Systems}, pages={8--15}, year={2026} }"
   },
   {
     "title": "Stateless Network-Aware Adaptive Bitrate Streaming over IPFS",

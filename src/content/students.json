@@ -1,9 +1,10 @@
 [
-    {"name": "Sai Murali Marisetty", "join": "Jan 2025", "left": "Aug 2025"},
-    {"name": "Alexander 'Sasha' Joukov", "join": "Jan 2025", "left": "May 2026"},
-    {"name": "Tahsin Ahmed", "join": "Aug 2025", "left": "May 2026"},
-    {"name": "Joseph Wu", "join": "Jan 2026", "left": "May 2026"},
-    {"name": "Ansh Tyagi", "join": "Jan 2026", "left": "Present"},
-    {"name": "Sravya Atche", "join": "Jan 2026", "left": "Present"},
-    {"name": "Asal Delkhosh", "join": "Aug 2026", "left": "Present"}
+    {"name": "(MS) Sai Murali Marisetty", "join": "Jan 2025", "left": "Aug 2025"},
+    {"name": "(MS) Sandhya Narravula", "join": "Jan 2025", "left": "Aug 2025"},
+    {"name": "(UG) Alexander 'Sasha' Joukov", "join": "Jan 2025", "left": "May 2026"},
+    {"name": "(MS) Tahsin Ahmed", "join": "Aug 2025", "left": "May 2026"},
+    {"name": "(UG) Joseph Wu", "join": "Jan 2026", "left": "May 2026"},
+    {"name": "(MS) Ansh Tyagi", "join": "Jan 2026", "left": "Present"},
+    {"name": "(MS) Sravya Atche", "join": "Jan 2026", "left": "Present"},
+    {"name": "(MS) Asal Delkhosh", "join": "Aug 2026", "left": "Present"}
 ]

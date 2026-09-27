@@ -1,6 +1,6 @@
 [
   {
-    "content": "KVC TierSim — Heterogeneous KV-cache tier simulator for LLM inference",
+    "content": "KV-cache Tier Simulator — Heterogeneous KV-cache tier simulator for LLM inference.",
     "url": "https://github.com/sbu-fsl/KVC-TierSim"
   },
   {
@@ -12,7 +12,7 @@
     "url": "https://github.com/amirhnajafiz/localsight"
   },
   {
-    "content": "MayIGoo — A small service-account authorization service written in Go",
+    "content": "MayIGoo — A small service-account authorization service written in Go.",
     "url": "https://github.com/amirhnajafiz/mayigoo"
   }
 ]
