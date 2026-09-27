@@ -54,7 +54,7 @@ function PaperItem({ paper, index }: { paper: Paper; index: number }) {
 export function Papers() {
   return (
     <Section id="papers">
-      <SectionHeading icon={<PaperIcon />}>Papers</SectionHeading>
+      <SectionHeading icon={<PaperIcon />}>Papers ({papers.length})</SectionHeading>
       <div className="paper-list">
         {papers.map((p, i) => (
           <PaperItem key={p.url} paper={p} index={i} />

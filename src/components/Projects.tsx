@@ -6,7 +6,7 @@ import { Section, SectionHeading } from "./Section";
 export function Projects() {
   return (
     <Section id="projects" className="section-tinted">
-      <SectionHeading icon={<StackIcon />}>Projects</SectionHeading>
+      <SectionHeading icon={<StackIcon />}>Projects ({projects.length})</SectionHeading>
       <LinkList items={projects} />
     </Section>
   );

@@ -6,7 +6,7 @@ import { Section, SectionHeading } from "./Section";
 export function Students() {
   return (
     <Section id="students">
-      <SectionHeading icon={<SproutIcon />}>Students</SectionHeading>
+      <SectionHeading icon={<SproutIcon />}>Students ({students.length})</SectionHeading>
       <div className="students-grid">
         {students.map((s, i) => (
           <motion.article

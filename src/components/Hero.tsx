@@ -44,7 +44,7 @@ export function Hero() {
           <motion.span className="hero-tagline" variants={item}>
             {profile.tagline}
           </motion.span>
-          <motion.h1 variants={item}>{profile.name}</motion.h1>
+          <motion.h2 variants={item}>{profile.name}</motion.h2>
           <motion.ul className="hero-details" variants={item}>
             {profile.details.map((d) => (
               <li key={d.label}>
